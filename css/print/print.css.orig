@@ -1,0 +1,28 @@
+@media print {
+
+    div#main {
+        margin: 0;
+    }
+
+    div#header, div#nav, div#col1, div#col2, div#footer, div#adressfuss, div#unilogo {
+        display: none;
+    }
+
+    div#col3 {
+        width: 100%;
+        margin: 0em;
+        margin-top: 5em;
+        background: #ffffff;
+    }
+
+    #col3_content {
+        background-color: #ffffff;
+        border: none;
+        font-size: 11px;
+    }
+
+    #col3_content #pagetitle {
+        display: none;
+    }
+
+}

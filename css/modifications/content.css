@@ -1,0 +1,79 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 09.02.07
+**  Datei       : modifications/content.css
+**  Funktion    : Stylesheet für den Content-Bereich
+**
+*/
+
+@media all
+{
+
+/************* Absatz- und Titelformate **************/
+#col3_content p {
+    margin-bottom: 0.3em;
+	padding: 0.5em 1em 0.5em 1em;
+	font-size: 1.15em;
+	line-height: 1.25em;
+}
+
+/* Formatierung des Pagetitles */
+#col3_content h1 {
+	background-color: #9dbbbb;
+	margin-bottom: 1em;
+	padding: 0.3em 0.5em;
+}
+
+#col3_content h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#col3_content h1 a:hover, h2 a:hover {
+	color: #ff0033;
+	text-decoration: underline;
+}
+
+#col3_content h2 {
+    margin: 1em 0.9em 0.4em 0.9em;
+}
+
+#col3_content h2 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#col3_content h3 {
+	margin: 1em 1em 0.2em 1em;
+}
+
+#col3_content h4 {
+    margin: 1em 1.1em 0em 1.1em;
+}
+
+#col3_content img {
+	border: 0;
+}
+
+#col3_content li {
+    font-size: 1.1em;
+}
+
+#col3_content li li {
+    font-size: 1em;
+}
+
+/* Service Box */
+.service { color: #666666; background-color: #e8e8eb; margin-bottom: 2em; }
+.service h1, .service h2, .service h3 { background-color: #b4baad; color: #ffffff; padding: 0.2em 0.3em 0.2em 1.3em; font-size: 1.3em; }
+.service ul { list-style-image: url(../../images/icon_link.gif); margin: 0em; padding: 0.5em; }
+.service li { font-size: 1.1em; line-height: 1.3em; }
+.service a { color: #666666; text-decoration: none; }
+.service a:hover { color: #ff0033; text-decoration: underline; }
+.service p { padding: 0.5em; font-size: 1.1em; }
+.service button { background-color: #dae3e3; border: none; color: #ff0033; cursor: pointer; }
+
+}

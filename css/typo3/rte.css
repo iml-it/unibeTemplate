@@ -1,0 +1,37 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 12.02.07
+**  Datei       : typo3/rte.css
+**  Funktion    : Stylesheet für den RichText-Editor
+**
+*/
+
+span.quote { font-style: italic; color: #ee9; }
+span.highlight { background-color: yellow; color: #000; }
+span.deprecated { text-decoration: line-through; color: #aaa; }
+span.code { font-family: Courier, monospace; }
+
+p.highlight { margin-left: 1em; margin-right: 1em; background-color: #dddddd; }
+
+/* table styles */
+table.frame1 { background-color: #dddddd; padding: 5px; }
+table.frame2 { border: 1px solid #999999; padding: 5px; }
+td.highlight { background-color: #dddddd; }
+
+/* list styles */
+ol.circle { list-style-type:circle; }
+ol.square { list-style-type: square; }
+ol.decimal { list-style-type: decimal; }
+ol.decimal-leading-zero { list-style-type: decimal-leading-zero; }
+ol.lower-latin { list-style-type: lower-latin; }
+ol.upper-latin { list-style-type: upper-latin; }
+ol.lower-roman { list-style-type: lower-roman; }
+ol.upper-roman { list-style-type: upper-roman; }
+ol.lower-greek { list-style-type: lower-greek; }
+ul.linkliste { margin-left: 1.3em; list-style-image: url(../../images/icon_link.gif); }
+ul.linkliste a { color: #000000; text-decoration: none; }
+ul.linkliste a:hover { color: #ff0033; text-decoration: underline; }
+li.linkliste { list-style-image: url(../../images/icon_link.gif); }

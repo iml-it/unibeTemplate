@@ -1,0 +1,20 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 19.02.07
+**  Datei       : typo3/tx_newloginbox.css
+**  Funktion    : Stile für extension "css styled filelinks"
+**
+*/
+
+@media all
+{
+
+.tx-newloginbox-pi1 table {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+}

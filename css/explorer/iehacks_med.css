@@ -1,0 +1,15 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 08.02.07
+**  Datei       : iehacks_unibe_inst.css
+**  Funktion    : IE-Korrektur-Stylesheet für das Unibe-Layout
+**
+*/
+
+/* LAYOUT-UNABHÄNGIGE ANPASSUNGEN -------------------------------------------------------------------- */
+@import url(../main/iehacks.css);
+
+/* LAYOUT-ABHÄNGIGE ANPASSUNGEN ---------------------------------------------------------------------- */

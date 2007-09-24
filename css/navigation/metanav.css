@@ -1,0 +1,46 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 08.02.07
+**  Datei       : metanav.css
+**  Funktion    : Stylesheet für die Metanavigation
+**
+*/
+
+@media all
+{
+
+#metanav {
+    font-size: 1em;
+    width: 100%;
+    height: 1.6em;
+    margin-top: 0.5em;
+    color: #666666;
+}
+
+#metanav form {
+    margin: 0em;
+    padding: 0em;
+    display: inline;
+}
+
+#metanav input {
+    border: 0.1em solid #999999;
+}
+
+#metanav button {
+    border: 0em;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+}
+
+#metanav a {
+    color: #666666;
+    text-decoration: none;
+}
+
+}

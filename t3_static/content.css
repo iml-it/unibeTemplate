@@ -1,0 +1,130 @@
+/************* Listen **************/
+
+#content ul {
+	font-size: 1.1em;
+	line-height: 125%;
+	list-style-type: disc;
+        margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding: 0em 0.5em 0em 2.5em;
+
+}
+
+#content ul ul {
+        font-size: 1em;
+        margin: 0em;
+}
+
+#content ol {
+	font-size: 1.1em;
+	line-height: 125%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding: 0em 0.5em 0em 2.5em
+}
+
+
+#content ol ol {
+        font-size: 1em;
+        margin: 0em;
+}
+
+.linkliste a, .linkIntranet a {
+	color: #000000;
+	text-decoration: none;
+	text-indent: 0em;
+}
+
+.linkliste a:hover, .linkIntranet a:hover {
+	color: #ff0033;
+	text-decoration: underline;
+}
+
+.linkliste {
+    list-style-image: url(../images/icon_link.gif);
+}
+
+.linkIntranet {
+	list-style-image: url(../images/icon_link_intranet.gif);
+}
+
+.textlink {
+	color: #ff0033 !important;
+	text-decoration: underline !important;
+}
+
+
+/************* Tabellen **************/
+
+#content table {
+    margin: 0.5em;
+    margin-bottom: 1em;
+    rules: none;
+}
+
+#content td {
+    vertical-align: top;
+    font-size: 1em;
+    line-height: 110%;
+}
+
+#content th {
+    background-color: #ffffff;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.infoTabelle {
+    rules: rows;
+    background-color: #ffffff;
+}
+
+.infoTabelle tr {
+    border-bottom: 0.1em solid #555555;
+}
+
+.infoTabelleZeile {
+    background-color: #dedede;
+}
+
+#voting td {
+    font-size: 1.0em;
+}
+
+#voting th {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/************* interaktiv **************/
+
+input{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.inputbox{
+    border: 1em solid #b4baad;
+}
+
+.funktionstaste{
+    background-color: #dae3e3;
+    border: 0em;
+    color: #ff0033;
+    cursor: pointer;
+}
+
+
+/************* besondere Stile **************/
+
+.lead {
+    color: #666666;
+    font-weight: bold;
+}
+
+.unirot {
+    color: #ff0033;
+}
+
+.lageplan img {
+    margin-left: -0.5em;
+}

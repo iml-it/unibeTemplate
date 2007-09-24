@@ -1,0 +1,40 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 12.02.07
+**  Datei       : typo3/csc-menu.css
+**  Funktion    : Stile für Content Element menu
+**
+*/
+
+@media all
+{
+
+/* csc-def: Menu of these pages */
+/* csc-menu-1: Menu of subpage to these pages */
+/* csc-menu-2: Sitemap */
+/* csc-menu-3: Section Index (pagecontent w/Index checked) */
+/* csc-menu-4: Menu of subpage to these pages (with abstracts) */
+/* csc-menu-5: Recently updated pages */
+/* csc-menu-6: Related Pages (based on keywords) */
+/* csc-menu-7: Menu of subpage to these pages + sections */
+.csc-menu { margin-left: 1.3em; list-style-image: url(../../images/icon_link.gif); }
+.csc-menu a { color: #000000; text-decoration: none; }
+.csc-menu a:hover { color: #ff0033; text-decoration: underline; }
+.csc-menu-7 ul { margin-top: 0em; }
+
+.csc-sitemap li { list-style-image: url(../../images/icon_link.gif); }
+.csc-sitemap a { color: #000000; text-decoration: none; }
+.csc-sitemap a:hover { color: #ff0033; text-decoration: underline; }
+.csc-sitemap ul { margin: 0em; margin-left: 1.5em; }
+.csc-sitemap ul li { margin-left: 1em; font-weight: bold; }
+.csc-sitemap ul ul { margin-left: 0em ;}
+.csc-sitemap ul ul li { margin-left:1.5em; font-weight: normal; }
+.csc-sitemap ul ul ul { margin-left:0em;}
+.csc-sitemap ul ul ul li { margin-left: 2em; }
+.csc-sitemap ul ul ul { margin-left: 0em;}
+.csc-sitemap ul ul ul ul li { margin-left: 2.5em; }
+
+}

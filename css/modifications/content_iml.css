@@ -1,0 +1,19 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 09.02.07
+**  Datei       : modifications/content_iml.css
+**  Funktion    : Stylesheet für spezifische Non-Konformitäten des IML
+**
+*/
+
+@media all
+{
+
+/* Formatierung der Service Boxen */
+.service { background-color: #e1e4eb; }
+.service h3 { background-color: #b4baad; }
+
+}

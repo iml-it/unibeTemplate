@@ -1,0 +1,22 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 08.02.07
+**  Datei       : modifications/basemod_dienste.css
+**  Funktion    : Stylesheet für Zentrale Dienste
+**
+*/
+
+@media all
+{
+
+/* Formatierung des Institutsnamens */
+#identityText { background-color: #B0B9CA; }
+#identityText h1 { color: #000000; }
+
+/* Formatierung der Content Box */
+#col3_content { background-color: #e1e4eb; }
+
+}

@@ -1,0 +1,80 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 08.02.07
+**  Datei       : globalnav.css
+**  Funktion    : Stylesheet für die globale Navigation
+**
+*/
+
+@media all
+{
+
+/* Formatierung des Containers der Globalnavigation */
+#globalnav { width: 100%; margin-bottom: 3.6em; }
+
+/* all lists */
+#udm { margin: 0em; padding: 0em; }
+
+/* nested uls */
+#udm li ul {
+	position: absolute;
+	left: -1000em;
+	top: 3.5em;
+	list-style-type: none;
+	border: 0.1em #666666 solid;
+	border-top: 0.1em #ffffff solid;
+	z-index: 10;
+}
+
+/* all LIs */
+#udm li {
+	float: left;
+	width: auto;
+	margin: 0em;
+	padding-top: 0.1em;
+    list-style-type: none;
+	background-color: #e8e8eb;
+	font-weight: bold !important;
+}
+
+#udm li a {
+	white-space: nowrap;
+	margin-left: 0.2em;
+	padding: 0.3em 0em 0.3em 0.2em;
+	color: #666666;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold !important;
+	line-height: 1.5em;
+}
+
+#udm li a:hover {
+	color: #ff0033;
+	background-color: #ffffff;
+}
+
+/* nested LIs */
+#udm li ul li {
+	float: none;
+	line-height: 1.5em;
+}
+
+#udm li ul li a {
+	margin: 0em;
+	padding: 0.2em 1em 0.2em 0.5em;
+}
+
+/* hover effects on LIs */
+#udm li:hover ul, #udm li.sfhover ul {
+	left: auto;
+	margin-left: 0.2em;
+}
+
+#udm li ul li:hover, #udm li ul li.sfhover {
+	background: #ffffff;
+}
+
+}

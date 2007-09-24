@@ -1,0 +1,82 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 19.02.07
+**  Datei       : typo3/tx_cssfilelist.css
+**  Funktion    : Stile für extension "css styled filelinks"
+**
+*/
+
+@media all
+{
+
+.filelinks { margin: 0em 1em 1em 1em; font-size: 1.15em; }
+.filelinks div { padding-left: 2.5em; margin-bottom: 0.5em; background:url('../../fileicons/default.gif') left center no-repeat; }
+.filelinks span { }
+.filelinks_layout_1 span { display: block; }
+.filelinks .filecount { display: none; margin-bottom: 0.5em; }
+
+/*
+.filelinks_layout_0 { }
+.filelinks_layout_1 { }
+.fiellinks_layout_2 { }
+.filelinks a { }
+.filelinks a:hover { }
+*/
+
+/* Icons begin */
+.filelinks .3ds { background-image: url('../../fileicons/3ds.gif') !important; }
+.filelinks .ai { background-image: url('../../fileicons/ai.gif') !important; }
+.filelinks .ani { background-image: url('../../fileicons/ani.gif') !important; }
+.filelinks .au { background-image: url('../../fileicons/au.gif') !important; }
+.filelinks .avi { background-image: url('../../fileicons/avi.gif') !important; }
+.filelinks .bmp { background-image: url('../../fileicons/bmp.gif') !important; }
+.filelinks .cdr { background-image: url('../../fileicons/cdr.gif') !important; }
+.filelinks .css { background-image: url('../../fileicons/css.gif') !important; }
+.filelinks .csv { background-image: url('../../fileicons/csv.gif') !important; }
+.filelinks .doc { background-image: url('../../fileicons/doc.gif') !important; }
+.filelinks .dtd { background-image: url('../../fileicons/dtd.gif') !important; }
+.filelinks .eps { background-image: url('../../fileicons/eps.gif') !important; }
+.filelinks .exe { background-image: url('../../fileicons/exe.gif') !important; }
+.filelinks .fh3 { background-image: url('../../fileicons/fh3.gif') !important; }
+.filelinks .flash { background-image: url('../../fileicons/flash.gif') !important; }
+.filelinks .folder { background-image: url('../../fileicons/folder.gif') !important; }
+.filelinks .gif { background-image: url('../../fileicons/gif.gif') !important; }
+.filelinks .htm { background-image: url('../../fileicons/htm.gif') !important; }
+.filelinks .html { background-image: url('../../fileicons/html.gif') !important; }
+.filelinks .ico { background-image: url('../../fileicons/ico.gif') !important; }
+.filelinks .inc { background-image: url('../../fileicons/inc.gif') !important; }
+.filelinks .java { background-image: url('../../fileicons/java.gif') !important; }
+.filelinks .jpg { background-image: url('../../fileicons/jpg.gif') !important; }
+.filelinks .js { background-image: url('../../fileicons/js.gif') !important; }
+.filelinks .max { background-image: url('../../fileicons/max.gif') !important; }
+.filelinks .mid { background-image: url('../../fileicons/mid.gif') !important; }
+.filelinks .mov { background-image: url('../../fileicons/mov.gif') !important; }
+.filelinks .mpeg { background-image: url('../../fileicons/mpeg.gif') !important; }
+.filelinks .mpg { background-image: url('../../fileicons/mpg.gif') !important; }
+.filelinks .pcd { background-image: url('../../fileicons/pcd.gif') !important; }
+.filelinks .pcx { background-image: url('../../fileicons/pcx.gif') !important; }
+.filelinks .pdf { background-image: url('../../fileicons/pdf.gif') !important; }
+.filelinks .png { background-image: url('../../fileicons/png.gif') !important; }
+.filelinks .ps { background-image: url('../../fileicons/ps.gif') !important; }
+.filelinks .psd { background-image: url('../../fileicons/psd.gif') !important; }
+.filelinks .rtf { background-image: url('../../fileicons/rtf.gif') !important; }
+.filelinks .sgml { background-image: url('../../fileicons/sgml.gif') !important; }
+.filelinks .swf { background-image: url('../../fileicons/swf.gif') !important; }
+.filelinks .sxc { background-image: url('../../fileicons/sxc.gif') !important; }
+.filelinks .sxw { background-image: url('../../fileicons/sxw.gif') !important; }
+.filelinks .tga { background-image: url('../../fileicons/tga.gif') !important; }
+.filelinks .tif { background-image: url('../../fileicons/tif.gif') !important; }
+.filelinks .ttf { background-image: url('../../fileicons/ttf.gif') !important; }
+.filelinks .txt { background-image: url('../../fileicons/txt.gif') !important; }
+.filelinks .wav { background-image: url('../../fileicons/wav.gif') !important; }
+.filelinks .wrl { background-image: url('../../fileicons/wrl.gif') !important; }
+.filelinks .xls { background-image: url('../../fileicons/xls.gif') !important; }
+.filelinks .xml { background-image: url('../../fileicons/xml.gif') !important; }
+.filelinks .xsl { background-image: url('../../fileicons/xsl.gif') !important; }
+.filelinks .zip { background-image: url('../../fileicons/zip.gif') !important; }
+/* Icons end */
+
+}

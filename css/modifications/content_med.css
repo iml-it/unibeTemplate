@@ -1,0 +1,21 @@
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: 09.02.07
+**  Datei       : modifications/content_med.css
+**  Funktion    : Stylesheet für den Content-Bereich eines Med. Instituts
+**
+*/
+
+@media all
+{
+
+#col3_content h1 { background-color: #dd3601; color: #ffffff; }
+#col3_content th { background-color: #bdcbd3; }
+
+/* Formatierung der Service Boxen */
+.service h3 { background-color: #FF5F33; }
+
+}
