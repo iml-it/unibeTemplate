@@ -35,3 +35,4 @@ ul.linkliste { margin-left: 1.3em; list-style-image: url(../../images/icon_link.
 ul.linkliste a { color: #000000; text-decoration: none; }
 ul.linkliste a:hover { color: #ff0033; text-decoration: underline; }
 li.linkliste { list-style-image: url(../../images/icon_link.gif); }
+li.linkliste_intranet { list-style-image: url(../../images/icon_link_intranet.gif); }
