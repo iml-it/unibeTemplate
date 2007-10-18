@@ -7,19 +7,22 @@ function AddFillerLink(){
 if(!document.getElementById || !document.createElement) return;
 var i,l;
 for(i=0;i<arguments.length;i++){
-    l=document.createElement("a");
-    l.href="#";
-    l.appendChild(document.createTextNode("Add Text"));
-    l.onclick=function(){AddText(this);return(false)};
-    document.getElementById(arguments[i]).appendChild(l);
-		b=document.createTextNode(" | ");
-		document.getElementById(arguments[i]).appendChild(b);
-		r=document.createElement("a");
-		r.href="#";
-		r.appendChild(document.createTextNode("Remove Text"));
-    r.onclick=function(){RemoveText(this);return(false)};
-		document.getElementById(arguments[i]).appendChild(r);
-    }
+	
+	if (document.getElementById(arguments[i])) { /* Check elements exists - add Reinhard Hiebl */
+		l=document.createElement("a");
+		l.href="#";
+		l.appendChild(document.createTextNode("Add Text"));
+		l.onclick=function(){AddText(this);return(false)};
+		document.getElementById(arguments[i]).appendChild(l);
+			b=document.createTextNode(" | ");
+			document.getElementById(arguments[i]).appendChild(b);
+			r=document.createElement("a");
+			r.href="#";
+			r.appendChild(document.createTextNode("Remove Text"));
+		r.onclick=function(){RemoveText(this);return(false)};
+			document.getElementById(arguments[i]).appendChild(r);
+	}
+}
 }
 
 function AddText(el){
