@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ###############################################################
 ** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
 ** # basierend auf YAML (http://www.yaml.de)                     #
@@ -29,7 +30,7 @@ h1,h2,h3 { page-break-after:avoid; }
 abbr[title]:after, acronym[title]:after { content: '(' attr(title) ')'; }
 
 /* Sichtbare Auszeichnung der URLs von Links */
-#col3 a[href^="http:"], #col3 a[href^="https:"], 
+#col3 a[href^="http:"], #col3 a[href^="https:"],
 #col1 p a[href^="http:"], #col1 p a[href^="https:"],
 #col2 p a[href^="http:"], #col2 p a[href^="https:"]
 {
@@ -42,11 +43,11 @@ a[href]:after {
  color:#444;
  background-color:inherit;
  font-style:italic;
-} 
+}
 
 /* Umformatierung der Layoutboxen */
 body {margin:0; padding: 0;}
-#page_margins, #page { min-width: inherit; margin:0; padding: 0; border: 0; } 
+#page_margins, #page { min-width: inherit; margin:0; padding: 0; border: 0; }
 #topnav { display: none; }
 
 #header { display: none; }
