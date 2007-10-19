@@ -9,28 +9,28 @@
 **
 */
 
-@import url(main/base.css);
-@import url(modifications/basemod.css);
-@import url(modifications/content.css);
+@import url(../yaml/core/slim_base.css);
+@import url(screen/basemod.css);
+@import url(screen/content.css);
 @import url(navigation/breadcrumb.css);
 @import url(navigation/globalnav.css);
 @import url(navigation/metanav.css);
 @import url(navigation/localnav.css);
 
 /*
-@import url(modifications/basemod_dienste.css);
-@import url(modifications/content_dienste.css);
+@import url(screen/basemod_dienste.css);
+@import url(screen/content_dienste.css);
 */
 
 /*
-@import url(modifications/basemod_applikation.css);
-@import url(modifications/content_applikation.css);
+@import url(screen/basemod_applikation.css);
+@import url(screen/content_applikation.css);
 */
 
-@import url(modifications/basemod_med.css);
-@import url(modifications/content_med.css);
+@import url(screen/basemod_med.css);
+@import url(screen/content_med.css);
 
-@import url(modifications/content_iml.css);
+@import url(screen/content_iml.css);
 
 @import url(typo3/typo3.css);
 
