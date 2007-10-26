@@ -1,0 +1,322 @@
+####################################################
+## Copyright notice
+## (c) 2007 Dieter Bunkerd (yaml.t3net.de) <db@t3net.de>
+## All rights reserved
+##
+## This script is licensed under a Creative Commons Licence
+## German language:
+## http://creativecommons.org/licenses/by-nc-sa/2.0/de/deed.de
+## English language:
+## http://creativecommons.org/licenses/by-nc-sa/2.0/de/deed.en
+##
+## This copyright notice MUST APPEAR in all copies of the script.
+####################################################
+## YAML for TemplaVoila
+## static Constants
+## Version: 2.0.11
+####################################################
+PAGE_TARGET = _self
+styles.content.imgtext.captionSplit = 1
+styles.content.imgtext.imageTextSplit = 1
+content.pageFrameObj =
+[browser = msie]
+doctypesw_cond = 1
+[else]
+doctypesw_cond = 0
+[end]
+////////////////////////////////////////////////////
+// TSConstantsEditor Config
+////////////////////////////////////////////////////
+TSConstantEditor.yaml-basics {
+	header = YAML for TemplaVoila (Use with TYPO3 Versions 4.x.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	3 = mainMenuLinkWrap, mainMenuHeaderWrap, mainMenuIfsubLinkWrap, subMenuEntryLevel, subMenuExpandToggle, subMenuOff
+	4 = mainMenuJsMenuStandardLabel, mainMenuJsMenuFirstLangLabel, mainMenuJsMenuSecondLangLabel, mainMenuJsMenuAllWrap, selectorBoxOff, mainMenuJsMenuPage
+	6 = tabNavigationOff, tabNavEntryLevel, tabNavExcludeList
+	7 = menuHeadlineOff
+	8 = footerOff, footerStandardLangHtmlCode, footerFirstLangHtmlCode, footerSecondLangHtmlCode
+}
+TSConstantEditor.yaml-language {
+	header = YAML for TemplaVoila (Use with TYPO3 Versions 4.x.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	1 = standardLanguage, firstForeignLanguage, secondForeignLanguage, languageIsoCodeStandardLang, languageIsoCodeFirstLang, languageIsoCodeSecondLang, languageLocaleStandardLang, languageLocaleFirstLang, languageLocaleSecondLang, langMenuActAltTitleTags, langMenuActFileNames, langMenuActBackColor, langMenuDimmedAltTitleTags, langMenuDimmedFileNames, langMenuDimmedBackColor
+}
+TSConstantEditor.yaml-searchbox {
+	header = YAML for TemplaVoila (Use with TYPO3 Versions 4.x.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	13 = searchBoxOff, searchPagePID, searchboxTmplFile, searchboxTmplFileFirstLang, searchboxTmplFileSecondLang
+}
+TSConstantEditor.yaml-header {
+	header = YAML for TemplaVoila (Use with TYPO3 Versions 4.x.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	2 = headerImageWidth, headerImageHeight, firstHeaderImgageOff, linkFirstImageToggle, homePageUID
+	5 = headerNavigationIncludeList, topNavOff
+	11 = secondHeaderImgageOff, headerBannerWidth, headerBannerHeight
+}
+TSConstantEditor.yaml-teaser {
+	header = YAML for TemplaVoila (Use with TYPO3 Versions 4.x.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	1 = languageMenuOff
+	9 = toolbarDateFormatStandardLang, toolbarDateFormatFirstLang, toolbarDateFormatSecondLang, dateAndTimeOff
+	10 = fontsizeHtmlCode, fontSizeSelectorOff, pageHeaderDataStandardLang, pageHeaderDataFirstLang, pageHeaderDataSecondLang, pageBodyData
+	12 = teaserOff, toolbarStandardLangClickPathPrefix, toolbarFirstLangClickPathPrefix, toolbarSecondLangClickPathPrefix, rootlineLinkWrap, rootlineOff
+}
+###MOD_TS:EDITABLE_CONSTANTS###
+# cat=yaml-searchbox/enable/a; type=options[No=0,Yes=1]; label=Switch off searchbox?:If the searchbox is to be displayed, make sure the next 4 options are also correctly set.
+searchBoxOff = 0
+# cat=yaml-searchbox/enable/b; type=int+; label=Searchpage PID (Lang all):UID of the page containing the Indexed-Search-Plugin:
+searchPagePID = 13
+# cat=yaml-searchbox/enable/c; type=string; label=HTML-Template for searchbox (Lang 0):(Standard Language):
+searchboxTmplFile = fileadmin/templates/searchbox/template.htm
+# cat=yaml-searchbox/enable/d; type=string; label=HTML-Template for searchbox (Lang 1):(First Foreign Language):
+searchboxTmplFileFirstLang = fileadmin/templates/searchbox/template-en.htm
+# cat=yaml-searchbox/enable/e; type=string; label=HTML-Template for searchbox (Lang 2):(Second Foreign Language):
+searchboxTmplFileSecondLang = fileadmin/templates/searchbox/template-fr.htm
+# cat=yaml-header/enable/f; type=options[No=0,Yes=1]; label=Switch off Header-Navigation?:Make sure you have set the UIDs of the pages to appear in Header-Navigation in the next option.
+topNavOff = 0
+# cat=yaml-header/enable/g; type=string; label=Menu in Header (Lang all):Which pages must appear in the Header-Navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+headerNavigationIncludeList = 14,13,12
+# cat=yaml-header/enable/h; type=options[No=0,Yes=1]; label=Switch off first header image?:NOTICE: The header images must be stored within the page you want to display them. They are inherited to all pages below. The page must be of type "advanced" in order to be able to save images in it. By default the two images are stored in "Rootpage" only, hence they are inherited to ALL pages. Make "Rootpage" of type "advanced" temporarily, upload other images and then make it a "shortcut" again. 
+firstHeaderImgageOff = 0
+# cat=yaml-header/enable/i; type=options[No=0,Yes=1]; label=Switch off second header image?:NOTICE: The header images must be stored within the page you want to display them. They are inherited to all pages below. The page must be of type "advanced" in order to be able to save images in it. By default the two images are stored in "Rootpage" only, hence they are inherited to ALL pages. Make "Rootpage" of type "advanced" temporarily, upload other images and then make it a "shortcut" again.
+secondHeaderImgageOff = 0
+# cat=yaml-teaser/enable/j; type=options[No=0,Yes=1]; label=Switch off teaser?:If you turn off the teaser completely, everything in it (rootline, date and time, magnifiying glasses and language selector) are also turned off, no matter what the settings for them are.
+teaserOff = 0
+# cat=yaml-teaser/enable/k; type=options[No=0,Yes=1]; label=Switch off rootline (click path)?:If the rootline-menu is turned on (default), make sure the next 4 options are also correctly set.
+rootlineOff = 0
+# cat=yaml-teaser/enable/l; type=string; label=Toolbar Rootline (Lang 0):This Text prepends the clickpath-menu (standard language):
+toolbarStandardLangClickPathPrefix = Sie sind hier:
+# cat=yaml-teaser/enable/m; type=string; label=Toolbar Rootline (Lang 1):This Text prepends the clickpath-menu (first foreign language):
+toolbarFirstLangClickPathPrefix = You are here:
+# cat=yaml-teaser/enable/n; type=string; label=Toolbar Rootline (Lang 2):This Text prepends the clickpath-menu (second foreign language):
+toolbarSecondLangClickPathPrefix = Vous &#234;tes ici:
+# cat=yaml-teaser/enable/o; type=string; label=Toolbar Rootline (Lang all):Wrap around each single rootline-element:
+rootlineLinkWrap = |&nbsp;/&nbsp; |*| |&nbsp;/&nbsp; |*| |
+# cat=yaml-teaser/enable/p; type=options[No=0,Yes=1]; label=Switch off language menu?:
+languageMenuOff = 0
+# cat=yaml-teaser/enable/q; type=options[No=0,Yes=1]; label=Switch off fontsize selector?:If the fontsize selector is turned on (default), the next 5 options provide the necessary scripts. You could also turn off the fontsize selector and add other scripts instead, if you need that. Or you could leave the fontsize selector in place and add additional scripts.
+fontSizeSelectorOff = 0
+# cat=yaml-teaser/enable/r; type=string; label=JavaScript in Header (Lang 0):HTML-Code, beeing written in the <head>Tag of the page (standard language):
+pageHeaderDataStandardLang = <script type="text/javascript" src="fileadmin/scripts/cookies.js"></script><script type="text/javascript" src="fileadmin/scripts/efa_fontsize.js"></script>
+# cat=yaml-teaser/enable/s; type=string; label=JavaScript in Header (Lang 1):HTML-Code, beeing written in the <head>Tag of the page (first foreign language):
+pageHeaderDataFirstLang = <script type="text/javascript" src="fileadmin/scripts/cookies.js"></script><script type="text/javascript" src="fileadmin/scripts/efa_fontsize-en.js"></script>
+# cat=yaml-teaser/enable/t; type=string; label=JavaScript in Header (Lang 2):HTML-Code, beeing written in the <head>Tag of the page (second foreign language):
+pageHeaderDataSecondLang = <script type="text/javascript" src="fileadmin/scripts/cookies.js"></script><script type="text/javascript" src="fileadmin/scripts/efa_fontsize-fr.js"></script>
+# cat=yaml-teaser/enable/u; type=string; label=HTML-Code for body (Lang all):HTML-Code, beeing written in the <body>Tag of the page:
+pageBodyData = <script type="text/javascript">if (efa_fontSize) efa_fontSize.efaInit();</script>
+# cat=yaml-teaser/enable/v; type=string; label=Toolbar Fontsize (Lang all):HTML-Code to initialize fontsize-adjustment tools (magnifying glasses):
+fontsizeHtmlCode = <script type="text/javascript">if (efa_fontSize) document.write(efa_fontSize.allLinks);</script>
+# cat=yaml-basics/enable/w; type=options[No=0,Yes=1]; label=Switch off JavaScript menu?:If switched on (default), the next 5 options should be used to set it up properly. 
+selectorBoxOff = 0
+# cat=yaml-basics/enable/x type=string; label=Page ID where JavaScript-Menu displays ?:If you need to add pages, DO NOT just enter page-IDs here, but use this syntax: TSFE:id=2,TSFE:id=5 to display the menu on pages with ID 2 and 5. Don't forget the comma to separate each one.
+mainMenuJsMenuPage = TSFE:id=2
+# cat=yaml-basics/enable/y; type=string; label=JavaScript menu (Lang 0):Headline of the JavaScript-Menu on the root-page (standard language):
+mainMenuJsMenuStandardLabel = Zuletzt Aktualisierte Seiten:
+# cat=yaml-basics/enable/za; type=string; label=JavaScript menu (Lang 1):Headline of the JavaScript-Menu on the root-page (first foreign language):
+mainMenuJsMenuFirstLangLabel = Last updated pages:
+# cat=yaml-basics/enable/zb; type=string; label=JavaScript menu (Lang 2):Headline of the JavaScript-Menu on the root-page (second foreign language):
+mainMenuJsMenuSecondLangLabel = Des pages actualises en dernier:
+# cat=yaml-basics/enable/zc; type=wrap; label=JavaScript menu (Lang all):The wrap around the Dropdown-Box of the JavaScript-Menu:
+mainMenuJsMenuAllWrap = |
+# cat=yaml-teaser/enable/zd; type=options[No=0,Yes=1]; label=Switch off display of date and time?:If turned on (default), the next 3 options provide the language-specific settings. See http://php.net/manual/en/function.date.php for the correct usage of these codes.
+dateAndTimeOff = 0
+# cat=yaml-teaser/enable/ze; type=string; label=Toolbar Date/Time (Lang 0):Formatting date and time for standard-language:
+toolbarDateFormatStandardLang = date : j.n.Y : G:i : O
+# cat=yaml-teaser/enable/zf; type=string; label=Toolbar Date/Time (Lang 1):Formatting date and time for first foreign language:
+toolbarDateFormatFirstLang = date : n/j/Y : g:i a : O
+# cat=yaml-teaser/enable/zg; type=string; label=Toolbar Date/Time (Lang 2):Formatting date and time for second foreign language:
+toolbarDateFormatSecondLang = date : j.n.Y : G:i : O
+# cat=yaml-basics/enable/zh; type=options[No=0,Yes=1]; label=Switch off tab-navigation?:IMPORTANT: If you switch off the tab-navigation, you should set [subMenuEntryLevel] to 0 - otherwise the FIRST level of your pagetree ist NOT shown, because the tab-naviation doesn't exist anymore.
+tabNavigationOff = 0
+# cat=yaml-basics/enable/zi; type=int+; label=Entry level of tab-navigation:By default it shows all pages of the FIRST level (0) in your pagetree.
+tabNavEntryLevel = 0
+# cat=yaml-basics/enable/zj; type=string; label=Exclude from tab-navigation:Enter a comma-separated list of page-IDs here, to be excluded from tab-navigation.
+tabNavExcludeList =
+# cat=yaml-basics/enable/zk; type=options[No=0,Yes=1]; label=Switch off entire submenu?:NOTICE: If you turn off the submenu, all other options concerning it are ignored, of course.
+subMenuOff = 0
+# cat=yaml-basics/enable/zl; type=options[No=0,Yes=1]; label=Switch off headline above submenu?:Maybe your design requires this.
+menuHeadlineOff = 0
+# cat=yaml-basics/enable/zm; type=int+; label=Entry level of submenu:The submenu is the menu on the left side and by default it shows all pages and subpages of the SECOND level in your pagetree. 
+subMenuEntryLevel = 1
+# cat=yaml-basics/enable/zn; type=options[No=0,Yes=1]; label=Expand levels of submenu?:By default ALL levels of submenu are expanded (open). If there are many pages and subpages in your pagetree, it is possibly better to set this feature to "no" to make it more concise for the website-user. Then, the resepective levels are expanded (opened) only, if the user clicks on a parent-page.
+subMenuExpandToggle = 1
+# cat=yaml-basics/enable/zo; type=options[No=0,Yes=1]; label=Switch off entire footer?:MUST NOT be removed, unless you bought a license.
+footerOff = 0
+# cat=yaml-basics/enable/zp; type=string; label=Footer Links (Lang 0):HTML-Code for the footer (standard language). MUST NOT be removed, unless you bought a license.
+footerStandardLangHtmlCode = Dieses Layout basiert auf <a href="http://www.yaml.de/" target="_blank">YAML</a> &copy; von <a href="http://www.highresolution.info" target="_blank">Dirk Jesse</a> | TYPO3 Template &copy; von <a href="http://www.t3net.de/" target="_blank">t3net.de</a>
+# cat=yaml-basics/enable/zq; type=string; label=Footer Links (Lang 1):HTML-Code for the footer (first foreign language). MUST NOT be removed, unless you bought a license.
+footerFirstLangHtmlCode = This layout is based on <a href="http://www.yaml.de/" target="_blank">YAML</a> &copy; by <a href="http://www.highresolution.info" target="_blank">Dirk Jesse</a> | TYPO3 Template &copy; by <a href="http://www.t3net.de/" target="_blank">t3net.de</a>
+# cat=yaml-basics/enable/zr; type=string; label=Footer Links (Lang 2):HTML-Code for the footer (second foreign language). MUST NOT be removed, unless you bought a license.
+footerSecondLangHtmlCode = Cette pr&#233;sentation est bas&#233;e sur <a href="http://www.yaml.de/" target="_blank">YAML</a> &copy; by <a href="http://www.highresolution.info" target="_blank">Dirk Jesse</a> | TYPO3 Template &copy; by <a href="http://www.t3net.de/" target="_blank">t3net.de</a>
+# cat=yaml-header/dims/a; type=int+; label=Headerimage width (Lang all):Width of LEFT header-image:
+headerImageWidth = 480
+# cat=yaml-header/dims/b; type=int+; label=Headerimage height (Lang all):Height of LEFT header-image:
+headerImageHeight = 105
+# cat=yaml-header/dims/c; type=int+; label=Header banner width (Lang all):Width of RIGHT header-image:
+headerBannerWidth = 468
+# cat=yaml-header/dims/d; type=int+; label=Header banner height (Lang all):Height of RIGHT header-image:
+headerBannerHeight = 60
+# cat=yaml-basics/typo/a; type=wrap; label=Link to top (Lang 0):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopStandardLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="Nach oben" /></a></p>
+# cat=yaml-basics/typo/b; type=wrap; label=Link to top (Lang 1):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopFirstLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=yaml-basics/typo/c; type=wrap; label=Link to top (Lang 2):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopSecondLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="Vers le haut" /></a></p>
+# cat=yaml-header/links/a; type=string; label=Skiplink navigation (Lang 0):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeStandardLang = <a class="skip" href="#navigation" title="Direkt zur Navigation springen">Zur Navigation springen</a><span class="hideme">.</span><a class="skip" href="#content" title="Direkt zum Content springen">Zum Content springen</a><span class="hideme">.</span>
+# cat=yaml-header/links/b; type=string; label=Skiplink navigation (Lang 1):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeFirstLang = <a class="skip" href="#navigation" title="Jump to navigation">Jump to navigation</a><span class="hideme">.</span><a class="skip" href="#content" title="Jump to content">Jump to content</a><span class="hideme">.</span>
+# cat=yaml-header/links/c; type=string; label=Skiplink navigation (Lang 2):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeSecondLang = <a class="skip" href="#navigation" title="Jump to navigation">Jump to navigation</a><span class="hideme">.</span><a class="skip" href="#content" title="Jump to content">Jump to content</a><span class="hideme">.</span>
+# cat=yaml-language/language/a; type=string; label=Default language (Lang 0):UID of your default language (usually ALWAYS 0):
+standardLanguage = 0
+# cat=yaml-language/language/b; type=string; label=First foreign language (Lang 1):UID of your first foreign language (if any):
+firstForeignLanguage = 1
+# cat=yaml-language/language/c; type=string; label=Second foreign language (Lang 2):UID of your second foreign language (if any):
+secondForeignLanguage = 2
+# cat=yaml-language/language/d; type=string; label=Language menu active:Alt- and title tags of the images in language menu, if translations are available:
+langMenuActAltTitleTags = alt="" title="Deutsch" || alt="" title="English" || alt="" title="Francais"
+# cat=yaml-language/language/e; type=string; label=Language menu active:Filenames of images in language menu, if translations are available:
+langMenuActFileNames = fileadmin/img/flag_de.gif || fileadmin/img/flag_uk.gif || fileadmin/img/flag_fr.gif
+# cat=yaml-language/language/f; type=color; label=Language menu active:Background of flag, if this language is currently selected.
+langMenuActBackColor = #ff0000
+# cat=yaml-language/language/g; type=string; label=Language menu dimmed:Alt- and title tags of the images in language menu, if translations are NOT available:
+langMenuDimmedAltTitleTags = alt="" title="Deutsch - nicht verfügbar" || alt="" title="English - not available yet" || alt="" title="Francais - ne pas encore disponible"
+# cat=yaml-language/language/h; type=string; label=Language menu dimmed:Filenames of images in language menu, if translations are NOT available:
+langMenuDimmedFileNames = fileadmin/img/flag_de_d.gif || fileadmin/img/flag_uk_d.gif || fileadmin/img/flag_fr_d.gif
+# cat=yaml-language/language/i; type=color; label=Language menu dimmed:Background of flag, if this language(s) is (are) currently NOT selected.
+langMenuDimmedBackColor = #888888
+# cat=yaml-language/language/j; type=options [en,dk,de,no,it,fr,es,nl,cz,pl,si,fi,tr,se,pt,ru,ro,ch,sk,lt,is,hr,hu,gl,th,gr,hk,eu,bg,br,et,ar,he,ua,lv,jp,vn,ca,ba,kr,eo,my,hi]; label=ISO-Code (Lang 0):of the standard language.
+languageIsoCodeStandardLang = de
+# cat=yaml-language/language/k; type=options [en,dk,de,no,it,fr,es,nl,cz,pl,si,fi,tr,se,pt,ru,ro,ch,sk,lt,is,hr,hu,gl,th,gr,hk,eu,bg,br,et,ar,he,ua,lv,jp,vn,ca,ba,kr,eo,my,hi]; label=ISO-Code (Lang 1):of the first foreign language.
+languageIsoCodeFirstLang = en
+# cat=yaml-language/language/l; type=options [en,dk,de,no,it,fr,es,nl,cz,pl,si,fi,tr,se,pt,ru,ro,ch,sk,lt,is,hr,hu,gl,th,gr,hk,eu,bg,br,et,ar,he,ua,lv,jp,vn,ca,ba,kr,eo,my,hi]; label=ISO-Code (Lang 2):of the second foreign language.
+languageIsoCodeSecondLang = fr
+# cat=yaml-language/language/m; type=options [german,deutsch,de_DE,de_DE@euro,de_DE.iso88591,de_DE.iso885915@euro,de_DE.utf8,english,en_US,en_US.iso88591,en_US.iso885915,en_US.utf8,french,fr_FR,fr_FR@euro,fr_FR.iso88591,fr_FR.iso885915@euro,fr_FR.utf8]; label=Locale-Setting (Lang 0):of the standard language. This is tricky, because it depends on your webserver. Try different settings if dates and times are not shown correctly. On Windows-servers use the literals e.g. "german", on Linux-servers try to use the codes (e.g. de_DE*) according to the language you use. To find out which locales are installed on your Linux-Server, type 'locale -a' in a shell. 
+languageLocaleStandardLang =
+# cat=yaml-language/language/n; type=options [german,deutsch,de_DE,de_DE@euro,de_DE.iso88591,de_DE.iso885915@euro,de_DE.utf8,english,en_US,en_US.iso88591,en_US.iso885915,en_US.utf8,french,fr_FR,fr_FR@euro,fr_FR.iso88591,fr_FR.iso885915@euro,fr_FR.utf8]; label=Locale-Setting (Lang 1):of the first foreign language. This is tricky, because it depends on your webserver. Try different settings if dates and times are not shown correctly. On Windows-servers use the literals e.g. "german", on Linux-servers try to use the codes (e.g. de_DE*) according to the language you use. To find out which locales are installed on your Linux-Server, type 'locale -a' in a shell.
+languageLocaleFirstLang =
+# cat=yaml-language/language/o; type=options [german,deutsch,de_DE,de_DE@euro,de_DE.iso88591,de_DE.iso885915@euro,de_DE.utf8,english,en_US,en_US.iso88591,en_US.iso885915,en_US.utf8,french,fr_FR,fr_FR@euro,fr_FR.iso88591,fr_FR.iso885915@euro,fr_FR.utf8]; label=Locale-Setting (Lang 2):of the second foreign language. This is tricky, because it depends on your webserver. Try different settings if dates and times are not shown correctly. On Windows-servers use the literals e.g. "german", on Linux-servers try to use the codes (e.g. de_DE*) according to the language you use. To find out which locales are installed on your Linux-Server, type 'locale -a' in a shell.
+languageLocaleSecondLang =
+# cat=yaml-basics/other/a; type=wrap; label=Mainmenu (Lang all, optional):Wrap around each single link (if needed):
+mainMenuLinkWrap = |
+# cat=yaml-basics/other/b; type=wrap; label=Mainmenu (Lang all, optional):The wrap around a single Link in the mainmenu, if subpages are present (if needed):
+mainMenuIfsubLinkWrap = |
+# cat=yaml-basics/other/c; type=wrap; label=Mainmenu (Lang all, optional):The wrap around the headline of the mainmenu (if needed):
+mainMenuHeaderWrap = |
+# cat=yaml-basics/other/d; type=options[XHTML 1.0 Transitional=xhtml_trans,XHTML 1.0 Frameset=xhtml_frames,XHTML 1.0 Strict=xhtml_strict,XHTML 1.1=xhtml_11,XHTML 2=xhtml_2,NO doctype at all=none]; label=Doctype to use:Be careful and change this setting only if you know, what you are doing. Otherwise your pages might NOT be valid.
+docTypeToUse = xhtml_trans
+# cat=yaml-header/other/e; type=options[No=0,Yes=1]; label=Make a link to homepage?:The FIRST header image can be a link to your homepage on all pages, if you like this.
+linkFirstImageToggle = 1
+# cat=yaml-header/other/f; type=int+; label=UID of homepage?:If you have chosen the previous option, you need to tell TYPO3 what UID the homepage has, since this could be any page.
+homePageUID = 2
+# cat=yaml-headlines/other/a; type=options[No=0,Yes=1]; label=H1 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH1withImage = 0
+# cat=yaml-headlines/other/b; type=color; label=H1 - fontcolor:If replaced with an image, choose font color here.
+imageColorH1 = #776655
+# cat=yaml-headlines/other/c; type=color; label=H1 - background color:If replaced with an image, choose background color here.
+backgroundColorH1 = #ffffff
+# cat=yaml-headlines/other/d; type=options[No=0,Yes=1]; label=H1 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH1 = 1
+# cat=yaml-headlines/other/e; type=int+; label=H1 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH1 = 24
+# cat=yaml-headlines/other/f; type=text; label=H1 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH1 = fileadmin/fonts/Share-Regular.ttf
+# cat=yaml-headlines/other/g; type=options[No=0,Yes=1]; label=H2 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH2withImage = 0
+# cat=yaml-headlines/other/h; type=color; label=H2 - fontcolor:If replaced with an image, choose font color here.
+imageColorH2 = #4466CC
+# cat=yaml-headlines/other/i; type=color; label=H2 - background color:If replaced with an image, choose background color here.
+backgroundColorH2 = #ffffff
+# cat=yaml-headlines/other/j; type=options[No=0,Yes=1]; label=H2 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH2 = 1
+# cat=yaml-headlines/other/k; type=int+; label=H2 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH2 = 20
+# cat=yaml-headlines/other/l; type=text; label=H2 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH2 = fileadmin/fonts/Share-Regular.ttf
+# cat=yaml-headlines/other/m; type=options[No=0,Yes=1]; label=H3 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH3withImage = 0
+# cat=yaml-headlines/other/n; type=color; label=H3 - fontcolor:If replaced with an image, choose font color here.
+imageColorH3 = #958830
+# cat=yaml-headlines/other/o; type=color; label=H3 - background color:If replaced with an image, choose background color here.
+backgroundColorH3 = #ffffff
+# cat=yaml-headlines/other/p; type=options[No=0,Yes=1]; label=H3 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH3 = 1
+# cat=yaml-headlines/other/q; type=int+; label=H3 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH3 = 20
+# cat=yaml-headlines/other/r; type=text; label=H3 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH3 = fileadmin/fonts/Share-Regular.ttf
+# cat=yaml-headlines/other/s; type=options[No=0,Yes=1]; label=H4 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH4withImage = 0
+# cat=yaml-headlines/other/t; type=color; label=H4 - fontcolor:If replaced with an image, choose font color here.
+imageColorH4 = #ff4444
+# cat=yaml-headlines/other/u; type=color; label=H4 - background color:If replaced with an image, choose background color here.
+backgroundColorH4 = #ffffff
+# cat=yaml-headlines/other/v; type=options[No=0,Yes=1]; label=H4 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH4 = 1
+# cat=yaml-headlines/other/w; type=int+; label=H4 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH4 = 18
+# cat=yaml-headlines/other/x; type=text; label=H4 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH4 = fileadmin/fonts/Share-Regular.ttf
+# cat=yaml-headlines/other/y; type=options[No=0,Yes=1]; label=H5 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH5withImage = 0
+# cat=yaml-headlines/other/za; type=color; label=H5 - fontcolor:If replaced with an image, choose font color here.
+imageColorH5 = #888888
+# cat=yaml-headlines/other/zb; type=color; label=H5 - background color:If replaced with an image, choose background color here.
+backgroundColorH5 = #ffffff
+# cat=yaml-headlines/other/zc; type=options[No=0,Yes=1]; label=H5 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH5 = 1
+# cat=yaml-headlines/other/zd; type=int+; label=H5 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH5 = 18
+# cat=yaml-headlines/other/ze; type=text; label=H5 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH5 = fileadmin/fonts/Share-Regular.ttf
+# cat=yaml-statistics/other/a; type=options[Off=0,On=1]; label=Use Awstats?:Set to On, if you have installed cc_awstats and want to use it. You MUST either manually (not recommended) add $TYPO3_CONF_VARS['FE']['logfile_dir'] = 'fileadmin/' to localconf.php OR (recommended) use the install-tool and set logfile_dir to fileadmin/ - This works ONLY if you install cc_awstats, which is NOT part of the YAML-Project. 
+statisticsSetting = 0
+# cat=yaml-statistics/other/b; type=options[Off=0,On=1]; label=config.stat_apache:MUST be set if you want to use cc_awstats.
+statApacheSetting = 0
+# cat=yaml-statistics/other/c; type=text; label=Logfile:The file must reside in folder fileadmin/ and must be writeable for the webserver.
+statApacheLogFile = logfile.log
+# cat=yaml-statistics/other/d; type=options[Off=0,On=1]; label=config.stat_mysql:You can use this if you want database logging also but it's not needed.
+statMysqlSetting = 0
+# cat=yaml-urls/other/a; type=options[No=0,Yes=1]; label=Use simulateStaticDocuments?:If you are NOT using realURL, you can use simulateStaticDocuments instead. You CANNOT use this in conjunction with realURL. If enabled, the next 3 option are important for simulateStaticDocuments and must be either left at its default values or set to values that fit your needs. No extension is required, everything is included in TYPO3 already. IMPORTANT: Apache-module mod_rewrite must be installed on your webserver and you need a file named .htaccess in the root of your webserver.
+simStatDocOn = 0
+# cat=yaml-urls/other/b; type=int+; label=Add pagetitle:If not zero, TYPO3 generates urls with the title in, limited to the first x number of chars. If set to zero (0) this feature is turned off.
+simStatDocAddTitle = 40
+# cat=yaml-urls/other/c; type=options[base64,md5]; label=Encode additional parameters:Allows you to also encode additional parameters into the simulated filename. If you don't understand this, just leave the default setting.
+simStatDocPenc = md5
+# cat=yaml-urls/other/d; type=text; label=List of variables:A list of variables that may be a part of the md5/base64 encoded part of a simulate_static_document virtual filename.
+simStatDocPencOnlyP = cHash, tx_ttnews[backPid], tx_ttnews[tt_news], tx_ttnews[pS], tx_ttnews[pL], tx_ttnews[arc], tx_ttnews[cat], tx_ttnews[pointer], tx_ttnews[swords]
+# cat=yaml-urls/other/e; type=options[No=0,Yes=1]; label=Use realurl?:Enable this feature only, if you have installed the TYPO3 extension realurl. IMPORTANT: You have to configure realurl by means of its documentation. Read it! If you enable this feature, simulateStaticDocuments is switched off automatically, no matter what you set there. The option tx_realurl_enable = 1, which is required by realurl, is set automatically, if this feature is enabled. Do not forget to set Base URL also.
+realUrlOn = 0
+# cat=yaml-urls/other/f; type=options[No=0,Yes=1]; label=Use cooluri?:Enable this feature only, if you have installed the TYPO3 extension cooluri. IMPORTANT: You have to configure cooluri by means of its documentation. Read it! If you enable this feature, simulateStaticDocuments is switched off automatically, no matter what you set there. The option tx_cooluri_enable = 1, which is required by cooluri, is set automatically, if this feature is enabled. Do not forget to set Base URL also.
+coolUriOn = 0
+# cat=yaml-urls/other/g; type=text; label=Base URL:YOU MUST CHANGE this default-setting to YOUR domain. Use the same format as the default-setting (including the trailing slash '/'). IMPORTANT: The online-documentation of realurl instructs you to set this to '1' - THIS IS WRONG, set it to a domain, otherwise it will not work.
+userBaseUrl = http://www.changeme.tld/
+# cat=yaml-urls/other/h; type=options[all,cached,output]; label=Prefix local anchors:If realurl or cooluri is used and this feature is set to one of the keywords, the content will have all local anchors in links prefixed with the path of the script. Basically this means that <a href="#"> will be transformed to <a href="path/path/script?params#">. This procedure is necessary if Base URL is set. (all = the content is always processed before it may be stored in cache. cached = only if the page is put into the cache. output = only the output code just before it's echoed out.)
+userPrefixLocalAnchors = all
+# cat=yaml-expert-settings/other/a; type=options[No=0,Yes=1]; label=Enable Admin-Panel?:If set, the admin panel appears in the bottom of pages. NOTE: In addition the panel must be enabled for non-admin users as well, if you want this, using the TSconfig for the non-admin user! See adminguide documentation. 
+userAdmPanelOn = 0
+# cat=yaml-expert-settings/other/b; type=options[No=0,Yes=1]; label=Enable indexing at all?:Enables cached pages to be indexed. Must be enabled to get indexed_search to work. 
+userIndexingOn = 1
+# cat=yaml-expert-settings/other/c; type=options[No=0,Yes=1]; label=Index external documents?:If set, external media linked to on the pages is indexed as well. Certain software must to be installed on your webserver to use this feature. See indexed_serach documentation.
+userIndexExternalsOn = 0
+# cat=yaml-expert-settings/other/d; type=options[all,cached,output]; label=XHTML cleaning:Tries to clean up the output to make it XHTML compliant and a bit more. (all = the content is always processed before it may be stored in cache. cached = only if the page is put into the cache. output = only the output code just before it's echoed out.) 
+userXhtmlCleaning = all
+# cat=yaml-expert-settings/other/e; type=options[ltr,rtl]; label=Text direction:Sets text direction for whole document (useful for display of Arabic, Hebrew pages). Basically the value becomes the attribute value of "dir" for the <html> tag. (ltr = Left-To-Right, rtl = Right-To-Left) 
+userHtmlTagDir = ltr
+# cat=yaml-expert-settings/other/f; type=options[No=0,Yes=1]; label=Prefix comments off?:This is for debugging your TypoScript Code. If switched On, HTML comments are added like <!-- Output of lib.header.20 [begin] --> and <!-- Output of lib.header.20 [end] --> to find the output of an element easier in HTML source. The COA-Elements must be prepared to do this. Turn off for production environments!
+userDisablePrefComm = 1
+# cat=yaml-expert-settings/other/g; type=options[No=0,Yes=1]; label=YAML Debugging on?:If switched on, a grid will be shown as background-image of the body-Tag. It also checks, whether or not IE patchfiles are included correctly. See www.yaml.de/en/documentation/practice/drafting-and-debugging.html for more information on debugging your layouts with YAML.
+yamlDebugOn = 0
+# cat=yaml-expert-settings/other/h; type=options[No=0,Yes=1]; label=Show Filler-Link?:If switched on, a link is shown at the end of each page, to fill in dummy text. This is for testing the layout.
+yamlFillerLinkOn = 0

@@ -1,0 +1,21 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.yaml.de) #############################
+** # "YAML for TYPO3" (c) by Dieter Bunkerd (http://yaml.t3net.de) ######################################
+** ######################################################################################################
+**
+**  Datei       : patch_2col_left_13.css
+**  Funktion    : IE-Korrektur-Stylesheet für ein 2-Spalten-Layout mit einfachen #col3-Spaltentrennern
+**
+*/
+/* LAYOUT-UNABHÄNGIGE ANPASSUNGEN -------------------------------------------------------------------- */
+@import url(../../../typo3conf/ext/db_yamltv/template/yaml/core/iehacks.css);
+
+/* LAYOUT-ABHÄNGIGE ANPASSUNGEN ---------------------------------------------------------------------- */
+@media screen
+{
+
+/* IE5.x kollabierendes padding bei #main abfangen */
+* html #col3 {height: 1%; }
+* html #col1 {margin-right: -3px;}
+* html #col3 {margin-left: 21.5%; }
+}

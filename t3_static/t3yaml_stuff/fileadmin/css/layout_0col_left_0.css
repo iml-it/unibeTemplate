@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.yaml.de) #############################
+** # "YAML for TYPO3" (c) by Dieter Bunkerd (http://yaml.t3net.de) ######################################
+** ######################################################################################################
+**
+**  Datei       : layout_2col_left_0.css
+**  Funktion    : Zentrales Stylesheet 0-Spalten
+**
+*/
+@import url(../../typo3conf/ext/db_yamltv/template/yaml/core/base.css);
+@import url(screen/basemod.css);
+@import url(screen/basemod_0col_left_0.css);
+@import url(navigation/nav_slidingdoor.css);
+@import url(navigation/nav_vlist.css);
+@import url(screen/content.css);
+@import url(screen/typo3-RTE.css);
+@import url(print/print_003.css);

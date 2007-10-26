@@ -1,0 +1,883 @@
+####################################################
+## Copyright notice
+## (c) 2007 Dieter Bunkerd (yaml.t3net.de) <db@t3net.de>
+## All rights reserved
+##
+## This script is licensed under a Creative Commons Licence
+## German language:
+## http://creativecommons.org/licenses/by-nc-sa/2.0/de/deed.de
+## English language:
+## http://creativecommons.org/licenses/by-nc-sa/2.0/de/deed.en
+##
+## This copyright notice MUST APPEAR in all copies of the script.
+####################################################
+## YAML for TemplaVoila
+## static Setup
+## Version: 2.0.11
+####################################################
+config {
+	linkVars = L
+	uniqueLinkVars = 1
+	renderCharset = utf-8
+	metaCharset = utf-8
+	enableContentLengthHeader = 1
+	sendCacheHeaders = 1
+	doctype = {$docTypeToUse}
+//	xmlprologue = none
+	doctypeSwitch = {$doctypesw_cond}
+	htmlTag_langKey = {$languageIsoCodeStandardLang}
+	htmlTag_dir = {$userHtmlTagDir}
+	removeDefaultJS = external
+	debug = 0
+	locale_all = {$languageLocaleStandardLang}
+	sword_standAlone = 0
+	sword_noMixedCase = 0
+	intTarget = _self
+	extTarget = _blank
+	spamProtectEmailAddresses = 2
+	spamProtectEmailAddresses_atSubst = (at)
+	spamProtectEmailAddresses_lastDotSubst = (dot)
+	noScaleUp = 1
+	no_cache = 0
+	additionalHeaders = Content-Type:text/html;charset=utf-8
+// If you using AWSTATS
+	stat = {$statisticsSetting}
+	stat_apache = {$statApacheSetting}
+	stat_apache_logfile = {$statApacheLogFile}
+	stat_mysql = {%statMysqlSetting}
+//	stat_excludeBEuserHits =
+//	stat_excludeIPList =
+//	stat_apache_pagenames =
+//	stat_apache_notExtended =
+//	stat_apache_noHost =
+//	stat_titleLen =
+	content_from_pid_allowOutsideDomain = 1
+	pageTitleFirst = 1
+	headerComment = YAML for TemplaVoila - Version 2.0.11
+	language = {$languageIsoCodeStandardLang}
+	sys_language_uid = {$standardLanguage}
+	sys_language_mode = content_fallback
+	sys_language_overlay = hideNonTranslated
+	simulateStaticDocuments = 0
+	admPanel = {$userAdmPanelOn}
+	index_enable = {$userIndexingOn}
+	index_externals = {$userIndexExternalsOn}
+	xhtml_cleaning = {$userXhtmlCleaning}
+	disablePrefixComment = {$userDisablePrefComm}
+}
+// If using simulateStaticDocuments
+[globalVar = LIT:1 = {$simStatDocOn}]&&[globalVar = LIT:1 > {$realUrlOn}]&&[globalVar = LIT:1 > {$coolUriOn}]
+config {
+	simulateStaticDocuments = 1
+	simulateStaticDocuments_addTitle = {$simStatDocAddTitle}
+	simulateStaticDocuments_pEnc = {$simStatDocPenc}
+	simulateStaticDocuments_pEnc_onlyP = {$simStatDocPencOnlyP}
+}
+[global]
+// END If using simulateStaticDocuments
+// If using realURL
+[globalVar = LIT:1 = {$realUrlOn}]
+config {
+	baseURL = {$userBaseUrl}
+	tx_realurl_enable = 1
+	prefixLocalAnchors = {$userPrefixLocalAnchors}
+}
+[global]
+// END If using realURL
+// If using cooluri
+[globalVar = LIT:1 = {$coolUriOn}]
+config {
+	baseURL = {$userBaseUrl}
+	tx_cooluri_enable = 1
+	redirectOldLinksToNew = 1
+	prefixLocalAnchors = {$userPrefixLocalAnchors}
+}
+[global]
+// END If using cooluri
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+config.sys_language_uid = {$firstForeignLanguage}
+config.language = {$languageIsoCodeFirstLang}
+config.locale_all = {$languageLocaleFirstLang}
+config.htmlTag_langKey = {$languageIsoCodeFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+config.sys_language_uid = {$secondForeignLanguage}
+config.language = {$languageIsoCodeSecondLang}
+config.locale_all = {$languageLocaleSecondLang}
+config.htmlTag_langKey = {$languageIsoCodeSecondLang}
+[global]
+///////////////////////////////////////////////////
+// temp.buildHeaderData
+///////////////////////////////////////////////////
+temp.buildHeaderData {
+	20 = TEXT
+	20.value = <link href="fileadmin/css/
+	21 = USER
+	21.userFunc = tx_dbyamltv_pi1->main
+	21.field = cssfile
+	22 = TEXT
+	22.value = " rel="stylesheet" type="text/css" />
+	23 = TEXT
+	23.value = <!--[if lte IE 7]>
+	24 = TEXT
+	24.value = <link href="fileadmin/css/patches/
+	25 = USER
+	25.userFunc = tx_dbyamltv_pi1->main
+	25.field = iehacks
+	26 = TEXT
+	26.value = " rel="stylesheet" type="text/css" />
+	27 = TEXT
+	27.value = <![endif]-->
+	28 = TEXT
+	28.value = {$pageHeaderDataStandardLang}
+	29 = TEXT
+	29.value = <link rel="stylesheet" type="text/css" href="fileadmin/css/myOwnStyles.css" />
+}
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+temp.buildHeaderData.28.value = {$pageHeaderDataFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+temp.buildHeaderData.28.value = {$pageHeaderDataSecondLang}
+[global]
+// JavaScript Filler-Link, if user switched on feature
+[globalVar = LIT:1 = {$yamlFillerLinkOn}]
+temp.buildHeaderData {
+	30 = TEXT
+	30.value = <script type="text/javascript" src="fileadmin/scripts/ftod.js"></script>
+	31 = TEXT
+	31.value = <script type="text/javascript">window.onload=function(){AddFillerLink("col1_content","col2_content","col3_content");}</script>
+}
+[global]
+///////////////////////////////////////////////////
+// Main Template
+///////////////////////////////////////////////////
+page = PAGE
+page {
+	headerData < temp.buildHeaderData
+	includeLibs.dfn = fileadmin/scripts/dfn_iproc_tmenu.inc
+// Include the uncommented following line in local setup to use the PHP-driven lang-menu:
+//	includeLibs.multilanguage = fileadmin/scripts/languageMenu.php
+	10 = HTML
+	10.value ={$pageBodyData}
+	20 = USER
+	20.userFunc = tx_templavoila_pi1->main_page
+}
+// Background-grid, if user has switched on feature
+[globalVar = LIT:1 = {$yamlDebugOn}]
+page.bodyTag = <body class="bg_grid">
+page.stylesheet = typo3conf/ext/db_yamltv/template/yaml/debug/debug.css
+[global]
+///////////////////////////////////////////////////
+// lib.header
+///////////////////////////////////////////////////
+// Search-Box Settings
+plugin.tx_macinasearchbox_pi1 {
+	pidSearchpage = {$searchPagePID}
+	templateFile = {$searchboxTmplFile}
+}
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+plugin.tx_macinasearchbox_pi1.templateFile = {$searchboxTmplFileFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+plugin.tx_macinasearchbox_pi1.templateFile = {$searchboxTmplFileSecondLang}
+[global]
+// Header Settings
+lib.header = COA
+lib.header {
+	stdWrap.prefixComment = 2|Output of lib.header
+	10 < plugin.tx_macinasearchbox_pi1
+	20 = COA
+	20 {
+		stdWrap.prefixComment = 2|Output of lib.header.20
+		wrap = <div id="topnav">|</div>
+		10 = TEXT
+		10.value = {$headerSkiplinkHtmlCodeStandardLang}
+		20 = HMENU
+		20 {
+			special = list
+			special.value = {$headerNavigationIncludeList}
+			1 = TMENU
+			1 {
+				noBlur = 1
+				wrap = |
+				NO = 1
+				NO.ATagTitle.field = abstract // description // subtitle
+				NO.linkWrap = |&nbsp;&#124;&nbsp; |*| |&nbsp;&#124;&nbsp; |*| |
+				NO.allWrap = |
+				NO.stdWrap.htmlSpecialChars = 1
+				CUR < .NO
+				CUR = 1
+				CUR.allWrap = <strong>|</strong>
+				CUR.doNotLinkIt = 1
+				CUR.stdWrap.htmlSpecialChars = 1
+			}
+		}
+	}
+// Second image in header (can be a banner, SECOND image saved in page-properties is taken)
+	40 = COA
+	40 {
+		stdWrap.prefixComment = 2|Output of lib.header.40
+		stdWrap.outerWrap.cObject = COA
+		stdWrap.outerWrap.cObject {
+			wrap = <div id="banner">|</div>
+			10 = TEXT
+			10.value = <img class="headImg2" src="|"
+			20 = TEXT
+			20.value = alt="
+			30 = TEXT
+			30.data = page:title
+			40 = TEXT
+			40.value = "
+			50 = TEXT
+			50.value = title="
+			60 = TEXT
+			60.data = page:title
+			70 = TEXT
+			70.value = " />
+		}
+		10 = IMG_RESOURCE
+		10 {
+//			stdWrap.prefixComment = 2|Output of lib.header.40.10
+			file = GIFBUILDER
+			file {
+				format = png
+				XY = {$headerBannerWidth},{$headerBannerHeight}
+				10 = IMAGE
+				10 {
+					file {
+						width = {$headerBannerWidth}
+						height = {$headerBannerHeight}
+						import {
+							required = 1
+							data = levelmedia: -1, "slide"
+							wrap = uploads/media/ |
+							listNum = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// First image in header, FIRST image saved in page-properties is taken
+// Variant No. 1: User has chosen NOT to link it with homepage
+lib.header.30 = COA
+lib.header.30 {
+	stdWrap.prefixComment = 2|Output of lib.header.30
+	stdWrap.outerWrap.cObject = COA
+	stdWrap.outerWrap.cObject {
+		10 = TEXT
+		10.value = <img class="headImg1" src="|"
+		20 = TEXT
+		20.value = alt="
+		30 = TEXT
+		30.data = page:title
+		40 = TEXT
+		40.value = "
+		50 = TEXT
+		50.value = title="
+		60 = TEXT
+		60.data = page:title
+		70 = TEXT
+		70.value = " />
+	}
+}
+// Variant No. 2: User has chosen to link it with homepage
+[globalVar = LIT:1 = {$linkFirstImageToggle}]
+lib.header.30 = COA
+lib.header.30 {
+	stdWrap.prefixComment = 2|Output of lib.header.30
+	stdWrap.outerWrap.cObject = COA
+	stdWrap.outerWrap.cObject {
+		10 = TEXT
+		10.value = <img class="headImg1" src="|" alt="" title="Home" />
+		10.typolink.parameter = {$homePageUID}
+		10.typolink.target =
+		20 >
+		30 >
+		40 >
+		50 >
+		60 >
+		70 >
+	}
+}
+[global]
+// Both variants: Serach for nearest image in pagetree
+lib.header.30.10 = IMG_RESOURCE
+lib.header.30.10 {
+	file = GIFBUILDER
+	file {
+		format = png
+		XY = {$headerImageWidth},{$headerImageHeight}
+		10 = IMAGE
+		10 {
+			file {
+				width = {$headerImageWidth}
+				height = {$headerImageHeight}
+				import {
+					required = 1
+					data = levelmedia: -1, "slide"
+					wrap = uploads/media/ |
+					listNum = 0
+				}
+			}
+		}
+	}
+}
+// Delete COA-Members if user has set the appropriate option
+[globalVar = LIT:1 = {$searchBoxOff}]
+lib.header.10 >
+[global]
+[globalVar = LIT:1 = {$topNavOff}]
+lib.header.20 >
+[global]
+[globalVar = LIT:1 = {$firstHeaderImgageOff}]
+lib.header.30 >
+[global]
+[globalVar = LIT:1 = {$secondHeaderImgageOff}]
+lib.header.40 >
+[global]
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+lib.header.20.10.value = {$headerSkiplinkHtmlCodeFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+lib.header.20.10.value = {$headerSkiplinkHtmlCodeSecondLang}
+[global]
+///////////////////////////////////////////////////
+// lib.nav (Button Navigation in Header)
+///////////////////////////////////////////////////
+lib.nav = COA
+lib.nav {
+	10 = TEXT
+	10.value = <a id="navigation" name="navigation"></a>
+	10.stdWrap.prefixComment = 2|Output of lib.nav.10
+	20 = HMENU
+	20 {
+		stdWrap.prefixComment = 2|Output of lib.nav.20
+		wrap = <div id="nav_main">|</div>
+		entryLevel = {$tabNavEntryLevel}
+		excludeUidList = {$tabNavExcludeList}
+		1 = TMENU
+		1 {
+			noBlur = 1
+			wrap = <ul>|</ul>
+			NO = 1
+			NO.ATagTitle.field = abstract // description // subtitle
+			NO.allWrap = <li>|</li>
+			NO.linkWrap = <span>|</span>
+			NO.ATagBeforeWrap = 1
+			NO.stdWrap.htmlSpecialChars = 1
+			ACT = 1
+			ACT < .NO
+			ACT.allWrap = <li id="current">|</li>
+		}
+	}
+}
+// Delete COA-Members if user has set the appropriate option
+[globalVar = LIT:1 = {$tabNavigationOff}]
+lib.nav.10 >
+lib.nav.20 >
+// Put the skiplink anchor in submenu instead !!!
+lib.submenu.1 = TEXT
+lib.submenu.1.value = <a id="navigation" name="navigation"></a>
+lib.submenu.1.stdWrap.prefixComment = 2|Output of lib.submenu.1
+[global]
+///////////////////////////////////////////////////
+// lib.teaser
+///////////////////////////////////////////////////
+lib.teaser = COA
+lib.teaser {
+	wrap = <div id="teaser" class="clearfix">|</div>
+	10 = COA
+	10 {
+		stdWrap.prefixComment = 2|Output of lib.teaser.10
+		wrap = <div class="rootline">|</div>
+		10 = TEXT
+		10.value = {$toolbarStandardLangClickPathPrefix}
+		10.stdWrap.prefixComment = 2|Output of lib.teaser.10.10
+		10.noTrimWrap = || |
+		20 = HMENU
+		20 {
+			stdWrap.prefixComment = 2|Output of lib.teaser.10.20
+			special = rootline
+			special.range = 1|-1
+			1 = TMENU
+			1 {
+				allWrap = |
+				noBlur = 1
+				NO.linkWrap = {$rootlineLinkWrap}
+				NO.doNotLinkIt = 0 |*| 0 |*| 1
+				NO.ATagTitle.field = abstract // description // subtitle
+				NO.stdWrap.htmlSpecialChars = 1
+			}
+		}
+	}
+// If you want to switch back to the old language menu, copy this code to your LOCAL TypoScript setup
+// and REMOVE the comments. It will overwrite lib.teaser.20 then.
+// If you do this, you MUST also uncomment and insert to LOCAL TypoScript setup:
+// page.includeLibs.multilanguage = fileadmin/scripts/languageMenu.php
+// It is not recommended to do this!! New menu is fully configurable with TypoScript, while the old one works with an external PHP-Script.
+// OLD language menu BEGIN
+//	20 = COA
+//	20 {
+//		stdWrap.prefixComment = 2|Output of lib.teaser.20
+//		wrap = <div class="langMenu">|</div>
+//		10 = USER
+//		10.userFunc = user_languageMenu
+//	}
+// OLD language menu END
+// NEW language BEGIN
+	20 = COA
+	20 {
+		stdWrap.prefixComment = 2|Output of lib.teaser.20
+		wrap = <div class="langMenu">|</div>
+		10 = HMENU
+		10 {
+			special = language
+			special.value = {$standardLanguage},{$firstForeignLanguage},{$secondForeignLanguage}
+			wrap =
+			1 = GMENU
+			1 {
+				noBlur = 1
+				disableAltText = 1
+//				accessKey = 1
+				NO.XY = [10.w]+2, [10.h]+2
+				NO.backColor = {$langMenuDimmedBackColor}
+				NO.wrap = |
+				NO.imgParams = {$langMenuActAltTitleTags}
+				NO.noLink = 1
+				NO.allStdWrap.typolink {
+					uniqueLinkVars = 1
+					parameter.data = page:uid
+					additionalParams = &L={$standardLanguage} || &L={$firstForeignLanguage} || &L={$secondForeignLanguage}
+					addQueryString = 1
+					addQueryString.exclude = id
+					addQueryString.method = GET
+				}
+				NO.10 = IMAGE
+				NO.10.file = {$langMenuActFileNames}
+				NO.10.offset = 1,1
+				ACT < .NO
+				ACT = 1
+				ACT.allStdWrap >
+				ACT.backColor = {$langMenuActBackColor}
+				USERDEF1 < .NO
+				USERDEF1 = 1
+				USERDEF1.allStdWrap >
+				USERDEF1.imgParams = {$langMenuDimmedAltTitleTags}
+				USERDEF1.10.file = {$langMenuDimmedFileNames}
+			}
+		}
+	}
+// NEW language menu END
+	30 = COA
+	30 {
+		stdWrap.prefixComment = 2|Output of lib.teaser.30
+		wrap = <div class="selectFontSize">|</div>
+		10 = TEXT
+		10.value = {$fontsizeHtmlCode}
+		10.stdWrap.prefixComment = 2|Output of lib.teaser.30.10
+	}
+	40 = COA_INT
+	40 {
+		stdWrap.prefixComment = 2|Output of lib.teaser.40
+		wrap = <div class="aktDatum">|</div>
+		10 = TEXT
+		10 {
+			stdWrap.prefixComment = 2|Output of lib.teaser.40.10
+			data = {$toolbarDateFormatStandardLang}
+		}
+	}
+}
+// Delete COA-Members if user has set the appropriate option
+[globalVar = LIT:1 = {$teaserOff}]
+lib.teaser >
+[global]
+[globalVar = LIT:1 = {$rootlineOff}]
+lib.teaser.10 >
+[global]
+[globalVar = LIT:1 = {$languageMenuOff}]
+lib.teaser.20 >
+[global]
+[globalVar = LIT:1 = {$fontSizeSelectorOff}]
+lib.teaser.30 >
+[global]
+[globalVar = LIT:1 = {$dateAndTimeOff}]
+lib.teaser.40 >
+[global]
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+lib.teaser.10.10.value = {$toolbarFirstLangClickPathPrefix}
+lib.teaser.40.10.data = {$toolbarDateFormatFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+lib.teaser.10.10.value = {$toolbarSecondLangClickPathPrefix}
+lib.teaser.40.10.data = {$toolbarDateFormatSecondLang}
+[global]
+///////////////////////////////////////////////////
+// lib.selectorBox
+///////////////////////////////////////////////////
+// maybe the user wants to put anything else in here,
+// so make it a COA
+lib.selectorBox = COA
+lib.selectorBox {
+	stdWrap.prefixComment = 2|Output of lib.selectorBox
+}
+[globalVar = {$mainMenuJsMenuPage}]
+lib.selectorBox.100 = HMENU
+lib.selectorBox.100 {
+	stdWrap.prefixComment = 2|Output of lib.selectorBox.100
+	wrap = {$mainMenuJsMenuAllWrap}
+	special = updated
+	special.value = 1
+	special.maxAge = 3600*24*7
+	limit = 10
+	1 = JSMENU
+	1.target = _top
+	1.firstLabelGeneral = {$mainMenuJsMenuStandardLabel}
+}
+[global]
+// Delete selectorbox if user has set the appropriate option
+[globalVar = LIT:1 = {$selectorBoxOff}]
+lib.selectorBox.100 >
+[global]
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+lib.selectorBox.100.1.firstLabelGeneral = {$mainMenuJsMenuFirstLangLabel}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+lib.selectorBox.100.1.firstLabelGeneral = {$mainMenuJsMenuSecondLangLabel}
+[global]
+///////////////////////////////////////////////////
+// lib.submenu
+///////////////////////////////////////////////////
+lib.submenu = COA
+lib.submenu.10 = COA
+lib.submenu.10 {
+	stdWrap.prefixComment = 2|Output of lib.submenu.10
+	wrap = <ul id="submenu">|</ul>
+// Should begin with 20, so the user can add something here.
+	20 = TEXT
+	20.stdWrap.prefixComment = 2|Output of lib.submenu.10.20
+	20.data = leveltitle:1
+	20.ifEmpty.cObject = TEXT
+	20.ifEmpty.cObject.value = YAML CSS-Framework
+	20.wrap = <li id="title">|</li>
+	30 = HMENU
+	30 {
+		stdWrap.prefixComment = 2|Output of lib.submenu.10.30
+		wrap = |
+		entryLevel = {$subMenuEntryLevel}
+		1 = TMENU
+		1 {
+			expAll = {$subMenuExpandToggle}
+			noBlur = 1
+			wrap = |
+			IProcFunc = user_IProc_dfn
+			NO = 1
+			NO.ATagTitle.field = abstract // description // subtitle
+			NO.allWrap = |<span class="hidden">.</span>
+			NO.wrapItemAndSub = <li>|</li>
+			NO.stdWrap.htmlSpecialChars = 1
+			NO.linkWrap = {$mainMenuLinkWrap}
+			NO.ATagBeforeWrap = 1
+			CUR < .NO
+			CUR = 1
+			CUR.allWrap = <strong>|</strong><span class="hidden">.</span>
+			CUR.wrapItemAndSub = <li>|</li>
+			CUR.doNotLinkIt = 1
+			CUR.stdWrap.htmlSpecialChars = 1
+			IFSUB = 1
+			IFSUB < .NO
+			IFSUB.linkWrap = {$mainMenuIfsubLinkWrap}
+		}
+		2 < .1
+		2.wrap = <ul>|</ul>
+		3 < .1
+		3.wrap = <ul>|</ul>
+		4 < .1
+		4.wrap = <ul>|</ul>
+	}
+}
+// Delete entire menu if user has set the appropriate option
+[globalVar = LIT:1 = {$subMenuOff}]
+lib.submenu.10 >
+[global]
+// Delete headline of menu if user has set the appropriate option
+[globalVar = LIT:1 = {$menuHeadlineOff}]
+lib.submenu.10.20 >
+[global]
+///////////////////////////////////////////////////
+// lib.footer
+///////////////////////////////////////////////////
+// make it a COA, just in case the user wants to put
+// anything else here.
+lib.footer = COA
+lib.footer {
+	stdWrap.prefixComment = 2|Output of lib.footer
+	wrap = |
+	100 = TEXT
+	100.stdWrap.prefixComment = 2|Output of lib.footer.100
+	100.value = {$footerStandardLangHtmlCode}
+	100.wrap = <div id="footer">|</div>
+}
+// Delete entire footer if user has set the appropriate option
+[globalVar = LIT:1 = {$footerOff}]
+lib.footer.100 >
+[global]
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+lib.footer.100.value = {$footerFirstLangHtmlCode}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+lib.footer.100.value = {$footerSecondLangHtmlCode}
+[global]
+///////////////////////////////////////////////////
+// Changes to CSS styled content
+// to fit the needs for YAML
+///////////////////////////////////////////////////
+lib.parseFunc_RTE {
+	nonTypoTagStdWrap.encapsLines {
+//remove 'class=bodytext' in P-tags
+		addAttributes.P.class =
+	}
+}
+lib.stdheader {
+// remove the DIV-tag around headlines
+	stdWrap.dataWrap =
+	5.date = j.n.Y
+// remove 'csc-firstHeader' from Hx-tags
+	10.1.fontTag = <h1{register:headerStyle}>|</h1>
+	10.2.fontTag = <h2{register:headerStyle}>|</h2>
+	10.3.fontTag = <h3{register:headerStyle}>|</h3>
+	10.4.fontTag = <h4{register:headerStyle}>|</h4>
+	10.5.fontTag = <h5{register:headerStyle}>|</h5>
+}
+tt_content.stdWrap {
+	innerWrap2 = {$pageLinkToTopStandardLang}
+}
+// Language-specific settings first foreign language:
+[globalVar = GP:L = {$firstForeignLanguage}]
+lib.stdheader.5.date = n/j/Y
+tt_content.stdWrap.innerWrap2 = {$pageLinkToTopFirstLang}
+[global]
+// Language-specific settings second foreign language:
+[globalVar = GP:L = {$secondForeignLanguage}]
+lib.stdheader.5.date = j.n.Y
+tt_content.stdWrap.innerWrap2 = {$pageLinkToTopSecondLang}
+[global]
+//Remove target for content element filelist
+tt_content.uploads.20.linkProc.target >
+///////////////////////////////////////////////////
+// Replace Hx Tags with graphics if user choosed
+// this option
+// Phark-Method for image-replacement, see
+// http://meiert.com/de/publications/articles/20050513/#toc-phark
+// for details. 
+///////////////////////////////////////////////////
+[globalVar = LIT:1 = {$replaceH1withImage}]
+lib.stdheader.10.1 >
+lib.stdheader.10 {
+	1 = IMG_RESOURCE
+	1 {
+		file = GIFBUILDER
+		file {
+			XY = [10.w]+10,[10.h]+10
+			backColor = {$backgroundColorH1}
+			format = png
+			10 = TEXT
+			10 {
+				text.field = header
+				fontSize = {$fontSizeH1}
+				fontFile = {$imageFontH1}
+				fontColor = {$imageColorH1}
+				offset = 0,{$fontSizeH1}
+				niceText = {$niceTextH1}
+			}
+		}
+		stdWrap {
+			prepend = TEXT
+			prepend {
+				dataWrap = <h1 class="G" style=
+			}
+			innerWrap.cObject = COA
+			innerWrap.cObject {
+				10 = TEXT
+				10.value = "background:url(|) no-repeat;">
+			}
+			append = TEXT
+			append {
+				current = 1
+				wrap = |</h1>
+			}
+		}
+	}
+}
+[global]
+[globalVar = LIT:1 = {$replaceH2withImage}]
+lib.stdheader.10.2 >
+lib.stdheader.10 {
+	2 = IMG_RESOURCE
+	2 {
+		file = GIFBUILDER
+		file {
+			XY = [10.w]+10,[10.h]+10
+			backColor = {$backgroundColorH2}
+			format = png
+			10 = TEXT
+			10 {
+				text.field = header
+				fontSize = {$fontSizeH2}
+				fontFile = {$imageFontH2}
+				fontColor = {$imageColorH2}
+				offset = 0,{$fontSizeH2}
+				niceText = {$niceTextH2}
+			}
+		}
+		stdWrap {
+			prepend = TEXT
+			prepend {
+				dataWrap = <h2 class="G" style=
+			}
+			innerWrap.cObject = COA
+			innerWrap.cObject {
+				10 = TEXT
+				10.value = "background:url(|) no-repeat;">
+			}
+			append = TEXT
+			append {
+				current = 1
+				wrap = |</h2>
+			}
+		}
+	}
+}
+[global]
+[globalVar = LIT:1 = {$replaceH3withImage}]
+lib.stdheader.10.3 >
+lib.stdheader.10 {
+	3 = IMG_RESOURCE
+	3 {
+		file = GIFBUILDER
+		file {
+			XY = [10.w]+10,[10.h]+10
+			backColor = {$backgroundColorH3}
+			format = png
+			10 = TEXT
+			10 {
+				text.field = header
+				fontSize = {$fontSizeH3}
+				fontFile = {$imageFontH3}
+				fontColor = {$imageColorH3}
+				offset = 0,{$fontSizeH3}
+				niceText = {$niceTextH3}
+			}
+		}
+		stdWrap {
+			prepend = TEXT
+			prepend {
+				dataWrap = <h3 class="G" style=
+			}
+			innerWrap.cObject = COA
+			innerWrap.cObject {
+				10 = TEXT
+				10.value = "background:url(|) no-repeat;">
+			}
+			append = TEXT
+			append {
+				current = 1
+				wrap = |</h3>
+			}
+		}
+	}
+}
+[global]
+[globalVar = LIT:1 = {$replaceH4withImage}]
+lib.stdheader.10.4 >
+lib.stdheader.10 {
+	4 = IMG_RESOURCE
+	4 {
+		file = GIFBUILDER
+		file {
+			XY = [10.w]+10,[10.h]+10
+			backColor = {$backgroundColorH4}
+			format = png
+			10 = TEXT
+			10 {
+				text.field = header
+				fontSize = {$fontSizeH4}
+				fontFile = {$imageFontH4}
+				fontColor = {$imageColorH4}
+				offset = 0,{$fontSizeH4}
+				niceText = {$niceTextH4}
+			}
+		}
+		stdWrap {
+			prepend = TEXT
+			prepend {
+				dataWrap = <h4 class="G" style=
+			}
+			innerWrap.cObject = COA
+			innerWrap.cObject {
+				10 = TEXT
+				10.value = "background:url(|) no-repeat;">
+			}
+			append = TEXT
+			append {
+				current = 1
+				wrap = |</h4>
+			}
+		}
+	}
+}
+[global]
+[globalVar = LIT:1 = {$replaceH5withImage}]
+lib.stdheader.10.5 >
+lib.stdheader.10 {
+	5 = IMG_RESOURCE
+	5 {
+		file = GIFBUILDER
+		file {
+			XY = [10.w]+10,[10.h]+10
+			backColor = {$backgroundColorH5}
+			format = png
+			10 = TEXT
+			10 {
+				text.field = header
+				fontSize = {$fontSizeH5}
+				fontFile = {$imageFontH5}
+				fontColor = {$imageColorH5}
+				offset = 0,{$fontSizeH5}
+				niceText = {$niceTextH5}
+			}
+		}
+		stdWrap {
+			prepend = TEXT
+			prepend {
+				dataWrap = <h5 class="G" style=
+			}
+			innerWrap.cObject = COA
+			innerWrap.cObject {
+				10 = TEXT
+				10.value = "background:url(|) no-repeat;">
+			}
+			append = TEXT
+			append {
+				current = 1
+				wrap = |</h5>
+			}
+		}
+	}
+}
+[global]
