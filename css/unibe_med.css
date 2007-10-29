@@ -33,7 +33,7 @@
 
 @import url(screen/content_iml.css);
 
-@import url(typo3/typo3.css);
+@import url(../typo3/css/typo3.css);
 
 @import url(print/print.css);
 
