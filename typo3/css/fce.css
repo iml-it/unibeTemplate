@@ -15,6 +15,7 @@
 ** ####################################
 */
 .REboxGreen, .REboxRed, REboxBlue { margin-left: 1em; margin-right: 1em; }
+
 /* green */
 * html .REboxGreenContent { height:1% }
 .REboxGreenContent { overflow:hidden }
@@ -29,6 +30,7 @@
 .rGline2 { margin:0 3px; border-width:0 2px 0 2px; }
 .rGline3 { margin:0 2px; }
 .rGline4 { height:2px; margin:0 1px 0 1px; }
+
 /* red */
 * html .REboxRedContent { height:1% }
 .REboxRedContent { overflow:hidden }
@@ -43,6 +45,7 @@
 .rRline2 { margin:0 3px; border-width:0 2px 0 2px; }
 .rRline3 { margin:0 2px; }
 .rRline4 { height:2px; margin:0 1px 0 1px; }
+
 /* blue */
 * html .REboxBlueContent { height:1%; }
 .REboxBlueContent { overflow:hidden; }
