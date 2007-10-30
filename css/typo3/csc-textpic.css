@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: $Id$
+**  Datei       : typo3/css/textpic.css
+**  Funktion    : Stile für Content Element text/pic
+**
+*/
+
+@media all
+{
+
+.csc-textpic-imagewrap { margin: 1em; }
+.csc-textpic-intext-left .csc-textpic-imagewrap,
+.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap,
+.csc-textpic-intext-right .csc-textpic-imagewrap,
+.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap { margin-top: 0em; margin-bottom: 0.5em; }
+.csc-textpic-caption { font-size: 0.9em; }
+
+/*
+.csc-textpic { }
+.csc-textpic-left { }
+.csc-textpic-center { }
+.csc-textpic-right { }
+.csc-textpic-above { }
+.csc-textpic-below { }
+.csc-textpic-intext-left { }
+.csc-textpic-intext-right { }
+.csc-textpic-intext-left-nowrap { }
+.csc-textpic-intext-right-nowrap { }
+
+.csc-textpic-caption { }
+.csc-textpic-caption-l { }
+.csc-textpic-caption-c { }
+.csc-textpic-caption-r { }
+
+.csc-textpic-imagewrap { }
+.csc-textpic-image { }
+.csc-textpic-firstcol { }
+.csc-textpic-lastcol { }
+
+.csc-textpic-text { }
+*/
+
+
+/* table rendering */
+#col3_content table.imgtext-table { margin: 1em !important; margin-left: 1em !important; }
+}

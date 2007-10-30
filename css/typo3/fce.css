@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: $Id$
+**  Datei       : typo3/css/fce.css
+**  Funktion    : Stylesheet für flexible content elements (FCE)
+**
+*/
+
+/* ####################################
+** ### FCE 3 Boxes with rounded edges #
+** ####################################
+*/
+.REboxGreen, .REboxRed, REboxBlue { margin-left: 1em; margin-right: 1em; }
+
+/* green */
+* html .REboxGreenContent { height:1% }
+.REboxGreenContent { overflow:hidden }
+.REboxGreen { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxGreen p { margin:0 2px; padding:2px 0; line-height:1.2em; }
+.REboxGreenContent { display:block; background:#dfd; border-left:1px solid #bdb; border-right:1px solid #bdb; padding:0.5em 1em 0.5em 1em; }
+.REboxGreenContent h1, .REboxGreenContent h2, .REboxGreenContent h3, .REboxGreenContent  h4, .REboxGreenContent h5 { margin-top:0; }
+.rGline1, .rGline2, .rGline3, .rGline4 { display:block; overflow:hidden; font-size:1px; }
+.rGline1, .rGline2, .rGline3 { height:1px; }
+.rGline2, .rGline3, .rGline4 { background:#dfd; border-left:1px solid #bdb; border-right:1px solid #bdb; }
+.rGline1 { margin:0 5px; background:#bdb; }
+.rGline2 { margin:0 3px; border-width:0 2px 0 2px; }
+.rGline3 { margin:0 2px; }
+.rGline4 { height:2px; margin:0 1px 0 1px; }
+
+/* red */
+* html .REboxRedContent { height:1% }
+.REboxRedContent { overflow:hidden }
+.REboxRed { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxRed p { margin:0 2px; padding:2px 0; line-height:1.2em; }
+.REboxRedContent { display:block; background:#fdd; border-left:1px solid #dbb; border-right:1px solid #dbb; padding:0.5em 1em 0.5em 1em; }
+.REboxRedContent h1, .REboxRedContent h2, .REboxRedContent h3, .REboxRedContent h4, .REboxRedContent h5 { margin-top:0; }
+.rRline1, .rRline2, .rRline3, .rRline4 { display:block; overflow:hidden; font-size:1px; }
+.rRline1, .rRline2, .rRline3 { height:1px; }
+.rRline2, .rRline3, .rRline4 { background:#fdd; border-left:1px solid #dbb; border-right:1px solid #dbb; }
+.rRline1 { margin:0 5px; background:#dbb; }
+.rRline2 { margin:0 3px; border-width:0 2px 0 2px; }
+.rRline3 { margin:0 2px; }
+.rRline4 { height:2px; margin:0 1px 0 1px; }
+
+/* blue */
+* html .REboxBlueContent { height:1%; }
+.REboxBlueContent { overflow:hidden; }
+.REboxBlue { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxBlue p { margin:0 2px; padding:2px 0; line-height:1.2em; }
+.REboxBlueContent { display:block; background:#f0f0f4; border-left:1px solid #ccd; border-right:1px solid #ccd; padding:0.5em 1em 0.5em 1em; height:1%; overflow:hidden; }
+.REboxBlueContent h1, .REboxBlueContent h2, .REboxBlueContent h3, .REboxBlueContent h4, .REboxBlueContent h5 { margin-top:0; }
+.rBline1, .rBline2, .rBline3, .rBline4 { display:block; overflow:hidden; font-size:1px; }
+.rBline1, .rBline2, .rBline3 { height:1px; }
+.rBline2, .rBline3, .rBline4 { background:#f0f0f4; border-left:1px solid #ccd; border-right:1px solid #ccd; }
+.rBline1 { margin:0 5px; background:#ccd; }
+.rBline2 { margin:0 3px; border-width:0 2px 0 2px; }
+.rBline3 { margin:0 2px; }
+.rBline4 { height:2px; margin:0 1px 0 1px; }
+/* FCE 3 Boxes with rounded edges End */
+
+
+
+/* ################################
+** ### FCE adjustable columns     #
+** ################################
+*/
+div.flexi { overflow:hidden; display:block; clear:both; width:100%; height:1%; }
+div.flexi div { display:block; overflow:hidden; float:left; }
+div.flexi div.left { margin-right:5px; }
+div.flexi div.center { margin-right:5px; margin-left:5px; }
+div.flexi div.right { margin-left:5px; }
+/* FCE adjustable columns End */

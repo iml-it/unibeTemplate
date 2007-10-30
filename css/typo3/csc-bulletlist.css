@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: $Id$
+**  Datei       : typo3/css/csc-bulletlist.css
+**  Funktion    : Stile für Content Element bulletlists
+**
+*/
+
+@media all
+{
+
+ul.csc-bulletlist { margin-left: 1.3em; }
+
+/* unordered list */
+ul.csc-bulletlist-0 { }
+
+/* ordered list */
+ul.csc-bulletlist-1 { list-style: decimal; }
+
+/* linklist */
+ul.csc-bulletlist-2 { list-style-image: url(../../images/icon_link.gif); }
+ul.csc-bulletlist-2 a { color: #000000; text-decoration: none; }
+ul.csc-bulletlist-2 a:hover { color: #ff0033; text-decoration: underline; }
+
+}

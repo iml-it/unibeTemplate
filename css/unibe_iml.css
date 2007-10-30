@@ -11,7 +11,7 @@
 */
 
 /* YAML Core Styles */
-@import url(../yaml/core/slim_base.css);
+@import url(yaml/core/slim_base.css);
 
 /* Styles für das Unibe Grunddesign */
 @import url(screen/basemod.css);
@@ -29,7 +29,7 @@
 @import url(screen/content_iml.css);
 
 /* Typo3 spezifische Styles */
-@import url(../typo3/css/typo3.css);
+@import url(typo3/css/typo3.css);
 
 /* Styles für die Printversion */
 @import url(print/print.css);

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* ###############################################################
+** # Unibe Design (c) by Michael Rolli (http://www.iml.unibe.ch) #
+** # basierend auf YAML (http://www.yaml.de)                     #
+** ###############################################################
+**
+**  Dateiversion: $Id$
+**  Datei       : typo3/css/csc-frame.css
+**  Funktion    : Stile für Content Element Property frame
+**
+*/
+
+@media all
+{
+
+.csc-frame { margin-left: 1em; margin-right: 1em; }
+.csc-frame-invisible { display: none; }
+.csc-frame-rulerBefore { margin-top: 1em; margin-bottom: -1em; border-bottom: 1px solid #999999; }
+.csc-frame-rulerAfter { border-top: 1px solid #999999; }
+.csc-frame-indent { margin-left: 2em; margin-right: 2em; }
+.csc-frame-float33-left { margin-left: 0em; width: 32%; float: left; }
+.csc-frame-float33-right { margin-right: 0em; width: 32%; float: right;  }
+.csc-frame-float50-left { margin-left: 0em; width: 49%; float: left; }
+.csc-frame-float50-right { margin-right: 0em; width: 49%; float: right; }
+.csc-frame-float66-left { margin-left: 0em; width: 66%; float: left; }
+.csc-frame-float66-right { margin-right: 0em; width: 66%; float: right; }
+.csc-frame-frame1 { margin-top: 2em; margin-bottom: 2em; border: 1px solid #999999; }
+.csc-frame-frame2 { margin-top: 2em; margin-bottom: 2em; background-color: #dddddd; }
+.csc-frame-clearer { margin-left: 0em; margin-right: 0em; clear: both; }
+
+}
