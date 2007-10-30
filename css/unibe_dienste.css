@@ -5,7 +5,7 @@
 ** ###############################################################
 **
 **  Dateiversion: $Id$
-**  Datei       : css/unibe_iml.css
+**  Datei       : css/unibe_dienste.css
 **  Funktion    : Zentrales Stylesheet Unibe-Design
 **
 */
@@ -22,11 +22,8 @@
 @import url(navigation/localnav.css);
 
 /* Styles für Institute der Medizinischen Fakultät */
-@import url(screen/basemod_med.css);
-@import url(screen/content_med.css);
-
-/* Extra-Styles für das IML */
-@import url(screen/content_iml.css);
+@import url(screen/basemod_dienste.css);
+@import url(screen/content_dienste.css);
 
 /* Typo3 spezifische Styles */
 @import url(../typo3/css/typo3.css);
