@@ -10,19 +10,33 @@
 **
 */
 
-span.quote { font-style: italic; color: #ee9; }
-span.highlight { background-color: yellow; color: #000; }
-span.deprecated { text-decoration: line-through; color: #aaa; }
-span.code { font-family: Courier, monospace; }
 
-p.highlight { margin-left: 1em; margin-right: 1em; background-color: #dddddd; }
+
 
 /* table styles */
 table.frame1 { background-color: #dddddd; padding: 5px; }
 table.frame2 { border: 1px solid #999999; padding: 5px; }
 td.highlight { background-color: #dddddd; }
 
-/* list styles */
+/* Avoid borders around images in the RTE */
+img {border:0;}
+/* #############################
+** ### classesParagraph ########
+** #############################
+*/
+p.smalltext { font-size:0.9em; }
+p.greenbox { background-color:#dfd; border:1px #bdb solid; padding:1em; }
+p.yellowbox { background:#ffd; border:1px #ddb solid; padding:1em; }
+p.redbox { background-color:#fdd; border:1px #dbb solid; padding:1em; }
+p.code { font-family:"Courier New", Courier, monospace; font-size:0.9em; padding:1em; background:#f0f0f4; border:1px #ccd solid; }
+p.note { background:#dfd; padding: 1em; border-bottom: 1px #bdb dotted; }
+p.important { background:#ffd; padding:1em; border-bottom:1px #ddb dotted; }
+p.warning { background:#fdd; padding:1em; border-bottom:1px #dbb dotted; }
+p.info { background:#f7f7ef url(../../images/ausrufez-blau.gif) 10px 10px no-repeat; padding:1.5em 1.5em 1.5em 4em; }
+p.frage { background:#A43F15 url(../../images/fragez-blau.gif) 10px 10px no-repeat; color:#fff; padding:1.5em 1.5em 1.5em 4em; }
+p.stop { background:#fff url(../../images/stop.gif) 10px 10px no-repeat; padding:1.5em 1.5em 1.5em 4em; border:1px solid #a43f15; }
+p.zitat { background:#fff url(../../images/sprechblase.gif) 10px 10px no-repeat; color:#187ba2; padding:1.5em 1.5em 1.5em 4em; border:1px solid #187ba2; font-style:italic; }
+p.highlight { margin-left: 1em; margin-right:1em; margin-left: 1em; margin-right: 1em; background-color: #dddddd; }
 ol.circle { list-style-type:circle; }
 ol.square { list-style-type: square; }
 ol.decimal { list-style-type: decimal; }
@@ -37,3 +51,21 @@ ul.linkliste a { color: #000000; text-decoration: none; }
 ul.linkliste a:hover { color: #ff0033; text-decoration: underline; }
 li.linkliste { list-style-image: url(../../images/icon_link.gif); }
 li.linkliste_intranet { list-style-image: url(../../images/icon_link_intranet.gif); }
+/* #############################
+** ### classesCharacter ########
+** #############################
+*/
+span.mono { font-family:"Courier New", Courier, monospace; padding:0 0.3em 0 0.3em; background:#f0f0f4; border:1px #ccd solid; }
+span.file { font-family:"Courier New", Courier, monospace;	padding:0 0 0 14px; color:#000088; background:transparent url('../../images/file.gif') no-repeat left; }
+span.directory { font-family:"Courier New", Courier, monospace; padding:0 0 0 15px; color:#000088; background:transparent url('../../images/dir.gif') no-repeat left; }
+span.orangeBackground { background:#FEC216; }
+span.infoHeadline { display:block; color:#187ba2; text-transform:uppercase; font-weight:bold; border-bottom:2px solid white; padding-bottom:0.5em; margin-bottom:-1em; margin-left:-4em; padding-left:4em; margin-right:-1.5em; }
+span.frageHeadline { display:block; color:#fff; text-transform:uppercase; font-weight:bold; border-bottom:2px solid white; padding-bottom:0.5em; margin-bottom:-1em; margin-left:-4em; padding-left:4em; margin-right:-1.5em; }
+span.stopHeadline { display:block; color:#A43F15; text-transform:uppercase; font-weight:bold; padding-bottom:0.5em; margin-bottom:-1em; }
+span.quote { font-style: italic; color: #ee9; }
+span.highlight { background-color: yellow; color: #000; }
+span.deprecated { text-decoration: line-through; color: #aaa; }
+/* #############################
+** ### TagFreeClasses ##########
+** #############################
+*/

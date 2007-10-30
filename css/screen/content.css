@@ -15,8 +15,7 @@
 
 /************* Absatz- und Titelformate **************/
 #col3_content p {
-    margin-bottom: 0.3em;
-	padding: 0.5em 1em 0.5em 1em;
+    margin: 0.5em 1em 0.8em 1em;
 	font-size: 1.15em;
 	line-height: 1.25em;
 }
