@@ -27,7 +27,7 @@
 
     /* Hier kann ein umlaufender Rand um die gesamte Webseite erzeugt werden */
     #page { position: relative; background: #ffffff; }
-    #page_margins { width: 90%; margin: auto; max-width: 95em; }
+    #page_margins { width: 95em; margin: auto; }
 
     /* generelle HTML-Stile */
     a, a:hover { color: #ff0033; text-decoration: underline; }
@@ -40,7 +40,7 @@
     /* Formatierungen der Navigationscontainer siehe entsprechende css-files in navigation/ */
 
     /* Formatierung des Identity Bereichs */
-    #identity { position: relative; height: 6.2em; width: auto; margin-right: 18em; background-color: #e8e8eb; }
+    #identity { position: relative; height: 6.2em; margin-right: 18em; background-color: #e8e8eb; }
     #identityText { position: relative; width: 18em; height: 6.2em; }
     #identityText h1 {
         position: absolute;
@@ -50,7 +50,7 @@
         font-size: 1.35em;
         line-height: 110%;
     }
-    #identity #titelbild { position: absolute; bottom: 0em; left: 18em; width: 100%; height: 6.2em; background: url(../../images/iml_banner.jpg) no-repeat;}
+    #identity #titelbild { position: absolute; bottom: 0em; left: 18em; width: 59em; height: 6.2em; background: url(../../images/iml_banner.jpg) no-repeat;}
 
     /* Formatierung des Unilogos */
     #unilogo { position: absolute; top: 5em; right: 0em; background: #ffffff; padding-left: 1.4em; }
@@ -79,13 +79,14 @@
     #col2_content { margin-top: 6.5em; }
 
     /* Mittlere Spalte */
-    #col3 {	margin-left: 18em; margin-right: 18em; background-color: #d7d8d3; }
+    #col3 { width: auto; margin-left: 18em; margin-right: 18em; background-color: #d7d8d3; }
     #col3_content {
         margin-left: 1.2em;
         margin-right: 1.2em;
         padding-bottom: 1.2em;
         background-color: #dae3e3;
         border-bottom: 0.1em solid #999999;
+        height: auto;
     }
 
 }

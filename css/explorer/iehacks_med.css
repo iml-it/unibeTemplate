@@ -14,3 +14,11 @@
 @import url(../yaml/core/slim_iehacks.css);
 
 /* LAYOUT-ABHÄNGIGE ANPASSUNGEN ---------------------------------------------------------------------- */
+#page_margins {
+    width: 95.5em;
+}
+
+#col3_content {
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+}
