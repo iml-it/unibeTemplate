@@ -60,7 +60,8 @@
     #adressfuss { margin: 2.4em 1.4em 0em 1.4em; padding-bottom: 1em; clear: left; }
 
     /* Formatierung des Footers */
-    #footer { font-size: 1em; color: #aaaaaa; margin: 0.7em 0em 0em 18.4em; }
+    #footer { position: relative; font-size: 1em; color: #aaaaaa; margin: 0.7em 18.4em 0em 18.4em; }
+    #footer #intranet { position: absolute; right: 0; }
     #footer a { color: #aaaaaa;	text-decoration: none; }
 
 
