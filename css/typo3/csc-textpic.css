@@ -19,6 +19,7 @@
 .csc-textpic-intext-right .csc-textpic-imagewrap,
 .csc-textpic-intext-right-nowrap .csc-textpic-imagewrap { margin-top: 0em; margin-bottom: 0.5em; }
 .csc-textpic-caption { font-size: 0.9em; }
+.csc-textpic-clear { }
 
 /*
 .csc-textpic { }
