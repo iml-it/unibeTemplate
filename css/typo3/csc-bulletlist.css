@@ -13,13 +13,13 @@
 @media all
 {
 
-ul.csc-bulletlist { margin-left: 1.3em; }
+ul.csc-bulletlist { margin-left: 0; } 
 
 /* unordered list */
 ul.csc-bulletlist-0 { }
 
 /* ordered list */
-ul.csc-bulletlist-1 { list-style: decimal; }
+ul.csc-bulletlist-1 { list-style: decimal;  padding-left: 0.3em; }
 
 /* linklist */
 ul.csc-bulletlist-2 { list-style-image: url(../../images/icon_link.gif); }

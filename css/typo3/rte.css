@@ -36,7 +36,7 @@ p.info { background:#f7f7ef url(../../images/ausrufez-blau.gif) 10px 10px no-rep
 p.frage { background:#A43F15 url(../../images/fragez-blau.gif) 10px 10px no-repeat; color:#fff; padding:1.5em 1.5em 1.5em 4em; }
 p.stop { background:#fff url(../../images/stop.gif) 10px 10px no-repeat; padding:1.5em 1.5em 1.5em 4em; border:1px solid #a43f15; }
 p.zitat { background:#fff url(../../images/sprechblase.gif) 10px 10px no-repeat; color:#187ba2; padding:1.5em 1.5em 1.5em 4em; border:1px solid #187ba2; font-style:italic; }
-p.highlight { margin-left: 1em; margin-right:1em; margin-left: 1em; margin-right: 1em; background-color: #dddddd; }
+p.highlight { background-color: #dddddd; }
 ol.circle { list-style-type:circle; }
 ol.square { list-style-type: square; }
 ol.decimal { list-style-type: decimal; }
@@ -46,7 +46,7 @@ ol.upper-latin { list-style-type: upper-latin; }
 ol.lower-roman { list-style-type: lower-roman; }
 ol.upper-roman { list-style-type: upper-roman; }
 ol.lower-greek { list-style-type: lower-greek; }
-ul.linkliste { margin-left: 1.3em; list-style-image: url(../../images/icon_link.gif); }
+ul.linkliste { list-style-image: url(../../images/icon_link.gif); }
 ul.linkliste a { color: #000000; text-decoration: none; }
 ul.linkliste a:hover { color: #ff0033; text-decoration: underline; }
 li.linkliste { list-style-image: url(../../images/icon_link.gif); }

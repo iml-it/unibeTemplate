@@ -18,7 +18,7 @@
 /* contenttable-2: Zebra ohne Rubriken       */
 /* contenttable-3: Infotabelle mit Rubriken  */
 /* contenttable-4: Infotabelle ohne Rubriken */
-.contenttable { margin: 0em; margin-left: 1em; margin-right: 1em; }
+.contenttable { margin: 0em; }
 .contenttable-1, .contenttable-2,
 .contenttable-3, .contenttable-4 { background-color: #ffffff; }
 .contenttable-1 .tr-even, .contenttable-2 .tr-even { background-color: #dddddd; }

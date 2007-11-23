@@ -13,11 +13,27 @@
 @media all
 {
 
-fieldset.csc-mailform { margin-left: 1em; margin-right: 1em; border: 0.1em solid #999999; padding: 0.5em; }
+fieldset.csc-mailform { border: 0.1em solid #999999; padding: 0.5em; }
 .csc-mailform-field { margin-bottom: 0.5em; }
 .csc-mailform-field input[type^="radio"] { margin: 0.2em 0.3em 0.2em 0em; }
 .csc-mailform-field fieldset legend { display: none; }
 .csc-mailform-field fieldset label { display: inline; margin: 0.2em 1em 0.2em 0em; }
 .csc-mailform-field label { display: block; }
+
+/* from t3yaml:
+form#mailform fieldset {border:1px solid #ccc; padding:1em; background:#fafafa;}
+form#mailform fieldset span.csc-mailform-radio fieldset {margin:1em 2em 1em 1em;}
+form#mailform fieldset span.csc-mailform-radio fieldset input {width:auto; margin:0 0.3em 0 0; border:0;}
+form#mailform fieldset span.csc-mailform-radio fieldset label {float:none;}
+.csc-mailform-field {clear:both; margin-bottom:0.8em;}
+fieldset.csc-mailform .csc-mailform-field label {width:10em; float:left; text-align:right; background:#fafafa; padding:2px;}
+fieldset.csc-mailform .csc-mailform-field input, fieldset.csc-mailform .csc-mailform-field select, fieldset.csc-mailform .csc-mailform-field textarea {width:20em;}
+fieldset.csc-mailform .csc-mailform-field input.csc-mailform-check {width:auto; border:0; margin-top:0.2em;}
+fieldset.csc-mailform .csc-mailform-field textarea {font-size:1em;}
+fieldset.csc-mailform label span {color:red;}
+input#mailformformtype_mail {margin-left:0em; background:#fafafa; cursor:pointer;}
+input#mailformformtype_mail:hover {background:#f0f0f0;}
+.csc-mailform-field select {margin-left:1em; border:1px #ccc solid; background:#fafafa; color:#777;}
+*/
 
 }

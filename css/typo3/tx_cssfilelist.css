@@ -13,7 +13,7 @@
 @media all
 {
 
-.filelinks { margin: 0em 1em 1em 1em; font-size: 1.15em; }
+.filelinks { margin: 0 0 1em 0; font-size: 1.15em; }
 .filelinks div { padding-left: 2.5em; margin-bottom: 0.5em; background:url('../icons/default.gif') left center no-repeat; }
 .filelinks span { }
 .filelinks_layout_1 span { display: block; }
@@ -28,7 +28,7 @@
 */
 
 /* Icons begin */
-.filelinks .3ds { background-image: url('../icons/3ds.gif') !important; }
+.filelinks .\3ds { background-image: url('../icons/3ds.gif') !important; }
 .filelinks .ai { background-image: url('../icons/ai.gif') !important; }
 .filelinks .ani { background-image: url('../icons/ani.gif') !important; }
 .filelinks .au { background-image: url('../icons/au.gif') !important; }

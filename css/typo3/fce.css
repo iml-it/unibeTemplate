@@ -14,7 +14,6 @@
 ** ### FCE 3 Boxes with rounded edges #
 ** ####################################
 */
-.REboxGreen, .REboxRed, REboxBlue { margin-left: 1em; margin-right: 1em; }
 
 /* green */
 * html .REboxGreenContent { height:1% }

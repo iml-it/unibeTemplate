@@ -15,47 +15,51 @@
 
 /************* Absatz- und Titelformate **************/
 #col3_content p {
-    margin: 0.5em 1em 0.8em 1em;
-	font-size: 1.15em;
-	line-height: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    font-size: 1.15em;
+    line-height: 1.25em;
 }
 
 /* Formatierung des Pagetitles */
 #col3_content h1 {
-	background-color: #9dbbbb;
-	margin-bottom: 1em;
-	padding: 0.3em 0.5em;
+    background-color: #9dbbbb;
+    margin-bottom: 1em;
+    padding: 0.3em 0.5em;
 }
 
 #col3_content h1 a {
-	color: #000000;
-	text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 #col3_content h1 a:hover, h2 a:hover {
-	color: #ff0033;
-	text-decoration: underline;
+    color: #ff0033;
+    text-decoration: underline;
 }
 
 #col3_content h2 {
-    margin: 1em 0.9em 0.4em 0.9em;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
 }
 
 #col3_content h2 a {
-	color: #000000;
-	text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 #col3_content h3 {
-	margin: 1em 1em 0.2em 1em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
 }
 
 #col3_content h4 {
-    margin: 1em 1.1em 0em 1.1em;
+    margin-top: 1em;
+    margin-bottom: 0em;
 }
 
 #col3_content img {
-	border: 0;
+    border: 0;
 }
 
 #col3_content li {

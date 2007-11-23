@@ -57,7 +57,7 @@
     #unilogo img { width: 16.6em; height: 12.4em; }
 
     /* Formatierung des Adressfusses */
-    #adressfuss { margin: 2.4em 1.4em 0em 1.4em; padding-bottom: 1em; clear: left; }
+    #adressfuss { margin: 1.4em 1.4em 0em 1.4em; padding-bottom: 1em; clear: left; }
 
     /* Formatierung des Footers */
     #footer { position: relative; font-size: 1em; color: #aaaaaa; margin: 0.7em 18.4em 0em 18.4em; }
@@ -72,11 +72,11 @@
     #main { background: #ffffff; margin-top: 0.2em; }
 
     /* linke Spalte */
-    #col1 {	width: 18em; }
-    #col1_content { }
+    #col1 { width: 18em; }
+    #col1_content {  }
 
     /* Rechte Spalte */
-    #col2 {	width: 18em; }
+    #col2 { width: 18em; }
     #col2_content { margin-top: 6.5em; }
 
     /* Mittlere Spalte */
@@ -88,6 +88,11 @@
         background-color: #dae3e3;
         border-bottom: 0.1em solid #999999;
         height: auto;
+    }
+
+    #content {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
 }
