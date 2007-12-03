@@ -61,6 +61,22 @@
 .rBline4 { height:2px; margin:0 1px 0 1px; }
 /* FCE 3 Boxes with rounded edges End */
 
+/* light gray */
+* html .REboxLightContent { height:1% }
+.REboxLightContent { overflow:hidden }
+.REboxLight { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxLight p { margin:0 2px; padding:2px 0; line-height:1.2em; }
+.REboxLightContent { display:block; background:#eff8f8; border-left:1px solid #bdcbd3; border-right:1px solid #bdcbd3; padding:0.5em 1em 0.5em 1em; }
+.REboxLightContent h1, .REboxRedContent h2, .REboxRedContent h3, .REboxRedContent h4, .REboxRedContent h5 { margin-top:0; }
+.rLline1, .rLline2, .rLline3, .rLline4 { display:block; overflow:hidden; font-size:1px; }
+.rLline1, .rLline2, .rLline3 { height:1px; }
+.rLline2, .rLline3, .rLline4 { background:#eff8f8; border-left:1px solid #bdcbd3; border-right:1px solid #bdcbd3; }
+.rLline1 { margin:0 5px; background: #bdcbd3; }
+.rLline2 { margin:0 3px; border-width:0 2px 0 2px; }
+.rLline3 { margin:0 2px; }
+.rLline4 { height:2px; margin:0 1px 0 1px; }
+
+
 
 
 /* ################################
