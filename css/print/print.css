@@ -88,7 +88,7 @@ div#identity div#identity #titelbild { display: none; }
 #unilogo { top: 0em;  }
 #unilogo img { width: 8.3em; height: 6.2em; }
 
-// extension specific
+/* extension specific */
 .tx_imlstaffmgr_portrait_image img { width: 180em; }
 div#tx_imlstaffmgr_portrait table.presence td.anwesend:before { content:"X"; }
 div.csc-textpic-intext-left-nowrap dl { width: auto !important; }
