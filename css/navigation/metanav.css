@@ -44,6 +44,11 @@
     text-decoration: none;
 }
 
-#metanav .langmenu { font-weight: bold; }
+#metanav .langmenu { position: absolute; right: 18em; }
+#metanav .langmenu span { border: 0.1em solid #aaaaaa; padding: 0 0.2em; margin-left: 0.2em; }
+#metanav .langmenu .available { }
+#metanav .langmenu .active { background-color: #b4baad; }
+#metanav .langmenu .active a { color: #ffffff; }
+#metanav .langmenu .notavailable { color: #dddddd; }
 
 }
