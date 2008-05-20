@@ -45,9 +45,10 @@
 }
 
 #metanav .langmenu { position: absolute; right: 18em; }
-#metanav .langmenu span { border: 0.1em solid #aaaaaa; padding: 0 0.2em; margin-left: 0.2em; }
+#metanav .langmenu span { border: 0.1em solid #dd3601; padding: 0 0.2em; margin-left: 0.2em; }
+#metanav .langmenu span.notavailable { border-color: #aaaaaa; }
 #metanav .langmenu .available { }
-#metanav .langmenu .active { background-color: #b4baad; }
+#metanav .langmenu .active { background-color: #dd3601; }
 #metanav .langmenu .active a { color: #ffffff; }
 #metanav .langmenu .notavailable { color: #dddddd; }
 
