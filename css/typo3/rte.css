@@ -69,3 +69,6 @@ span.deprecated { text-decoration: line-through; color: #aaa; }
 ** ### TagFreeClasses ##########
 ** #############################
 */
+abbr, acronym { cursor: help; border-bottom: 1px dotted #333333; text-decoration: none; }
+
+abbr img, acronym img { margin-bottom: -2px; vertical-align: sub; border: none; }
