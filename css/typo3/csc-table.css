@@ -23,6 +23,6 @@
 .contenttable-3, .contenttable-4 { background-color: #ffffff; }
 .contenttable-1 .tr-even, .contenttable-2 .tr-even { background-color: #dddddd; }
 .contenttable-1 .tr-0, .contenttable-3 .tr-0 { font-weight: bold; }
-.contenttable td { font-size: 1.05em; margin: 0em; padding: 0.3em; }
+.contenttable td { font-size: 1.05em; margin: 0em; padding: 0.3em; vertical-align: top; }
 
 }

@@ -18,7 +18,7 @@
 /* green */
 * html .REboxGreenContent { height:1% }
 .REboxGreenContent { overflow:hidden }
-.REboxGreen { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxGreen { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxGreen p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxGreenContent { display:block; background:#dfd; border-left:1px solid #bdb; border-right:1px solid #bdb; padding:0.5em 1em 0.5em 1em; }
 .REboxGreenContent h1, .REboxGreenContent h2, .REboxGreenContent h3, .REboxGreenContent  h4, .REboxGreenContent h5 { margin-top:0; }
@@ -33,7 +33,7 @@
 /* red */
 * html .REboxRedContent { height:1% }
 .REboxRedContent { overflow:hidden }
-.REboxRed { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxRed { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxRed p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxRedContent { display:block; background:#fdd; border-left:1px solid #dbb; border-right:1px solid #dbb; padding:0.5em 1em 0.5em 1em; }
 .REboxRedContent h1, .REboxRedContent h2, .REboxRedContent h3, .REboxRedContent h4, .REboxRedContent h5 { margin-top:0; }
@@ -48,7 +48,7 @@
 /* blue */
 * html .REboxBlueContent { height:1%; }
 .REboxBlueContent { overflow:hidden; }
-.REboxBlue { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxBlue { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxBlue p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxBlueContent { display:block; background:#f0f0f4; border-left:1px solid #ccd; border-right:1px solid #ccd; padding:0.5em 1em 0.5em 1em; height:1%; overflow:hidden; }
 .REboxBlueContent h1, .REboxBlueContent h2, .REboxBlueContent h3, .REboxBlueContent h4, .REboxBlueContent h5 { margin-top:0; }
@@ -64,7 +64,7 @@
 /* light gray */
 * html .REboxLightContent { height:1% }
 .REboxLightContent { overflow:hidden }
-.REboxLight { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxLight { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxLight p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxLightContent { display:block; background:#f8f8fe; border-left:1px solid #bdcbd3; border-right:1px solid #bdcbd3; padding:0.5em 1em 0.5em 1em; }
 .REboxLightContent h1, .REboxLightContent h2, .REboxLightContent h3, .REboxLightContent h4, .REboxLightContent h5 { margin-top:0; }
@@ -79,7 +79,7 @@
 /* Dark gray */
 * html .REboxLightContent { height:1% }
 .REboxDarkContent { overflow:hidden }
-.REboxDark { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxDark { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxDark p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxDarkContent { display:block; background:#c8c8cb; border-left:1px solid #bdcbd3; border-right:1px solid #bdcbd3; padding:0.5em 1em 0.5em 1em; }
 .REboxDarkContent h1, .REboxDarkContent h2, .REboxDarkContent h3, .REboxDarkContent h4, .REboxDarkContent h5 { margin-top:0; }
@@ -94,7 +94,7 @@
 /* Neutral gray */
 * html .REboxLightContent { height:1% }
 .REboxNeutralContent { overflow:hidden }
-.REboxNeutral { display:block; background:transparent; font-weight:normal; margin-top:2em; }
+.REboxNeutral { display:block; background:transparent; font-weight:normal; margin-top:0.5em; }
 .REboxNeutral p { margin:0 2px; padding:2px 0; line-height:1.2em; }
 .REboxNeutralContent { display:block; background:transparent; border-left:1px solid #bdcbd3; border-right:1px solid #bdcbd3; padding:0.5em 1em 0.5em 1em; }
 .REboxNeutralContent h1, .REboxNeutralContent h2, .REboxNeutralContent h3, .REboxNeutralContent h4, .REboxNeutralContent h5 { margin-top:0; }

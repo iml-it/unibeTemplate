@@ -62,12 +62,16 @@
     border: 0;
 }
 
+#col3_content ul ul {
+    margin-bottom: 0.5em;
+}
+
 #col3_content li {
     font-size: 1.15em;
 }
 
 #col3_content li li {
-    font-size: 1.15em;
+    font-size: 0.95em;
 }
 
 /* Service Box */

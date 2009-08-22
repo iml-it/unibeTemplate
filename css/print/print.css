@@ -56,8 +56,8 @@ body {margin:0; padding: 0;}
 #nav { height: 10em; }
 div#breadcrumb, div#globalnav, div#metanav, div#identity_image { display: none; }
 div#identityText { padding-top: 0.5em; }
-div#identityText h1 { font-size: 10pt; margin: 0; width: 15em;}
-div#identityText h1:after { content:" Universität Bern" }
+div#identityText h1 { font-size: 10pt; margin: 0; width: 15em; margin: 0.5em; }
+/*div#identityText h1:after { content:" Universität Bern" }*/
 div#identity div#identity #titelbild { display: none; }
 
 #teaser { margin: 1em 0 0 0; padding: 0; border:0; }

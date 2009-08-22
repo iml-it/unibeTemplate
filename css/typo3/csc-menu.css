@@ -37,12 +37,12 @@
 
 /* second level */
 .csc-sitemap ul ul li { font-weight: normal; margin-bottom: 0em; }
-.csc-sitemap ul ul li a { font-size: 100%; }
+.csc-sitemap ul ul li  { font-size: 1em; }
 
 /* third level */
-.csc-sitemap ul ul ul li a { font-size: 90%; }
+.csc-sitemap ul ul ul li  { font-size: 0.9em; }
  
 /* fourth level */
-.csc-sitemap ul ul ul ul li a { font-size: 80%; line-height: 1.6em; }
+.csc-sitemap ul ul ul ul li  { font-size: 1em; line-height: 1.6em; }
 
 }
