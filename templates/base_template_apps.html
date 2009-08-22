@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+    <head>
+        <title><?php echo $this->pagetitle ?></title>
+        <!-- page metadata -->
+        <?php echo $this->meta ?>
+        <!-- charset, home, base -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="shortcut icon" href="http://www.unibe.ch/favicon.ico"/>
+
+        <?php echo $this->cssfiles ?>
+
+        <script type="text/javascript">
+            sfHover = function() {
+                var sfEls = document.getElementById("udm").getElementsByTagName("LI");
+                for (var i=0; i<sfEls.length; i++) {
+                    sfEls[i].onmouseover=function() {
+                        this.className+=" sfhover";
+                    }
+                    sfEls[i].onmouseout=function() {
+                        this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+                    }
+                }
+            }
+            if (window.attachEvent) window.attachEvent("onload", sfHover);
+        </script>
+</head>
+<body>
+<div id="page_margins">
+<div id="page">
+
+<div id="header">
+	<div id="topnav">
+	    <!-- Start: Skiplink-Navigation -->
+	    <a class="skip" href="#skip_breadcrumbnavigation" title="Direkt zur Breadcrumb-Navigation">Zur Breadcrumb-Navigation springen</a>
+		<a class="skip" href="#skip_globalnavigation" title="Direkt zur Global-Navigation springen">Zur Global-Navigation springen</a>
+		<a class="skip" href="#skip_metanavigation" title="Direkt zur Meta-Navigation springen">Zur Meta-Navigation springen</a>
+		<a class="skip" href="#skip_localnavigation" title="Direkt zur Lokal-Navigation springen">Zur Loka-Navigation springen</a>
+		<a class="skip" href="#skip_content" title="Direkt zum Inhalt springen">Zum Inhalt springen</a>
+		<a class="skip" href="#skip_service" title="Direkt zum Servicebereich springen">Zum Servicebereich springen</a>
+	    <!-- Ende: Skiplink-Navigation -->
+	</div>
+</div>
+
+<!-- #nav: Hauptnavigation -->
+<div id="nav">
+
+    <!-- #breadcrumb: Breadcrumb-Navigation -->
+    <div id="breadcrumb">
+        <a id="skip_breadcrumbnavigation" name="breadcrumbnavigation"></a> <!-- Skiplink-Anker: Breadcrumbnavigation -->
+        <a href="http://www.unibe.ch">home universit&auml;t</a> &gt;
+        <?php echo $this->breadcrumb ?>
+    </div>
+
+    <!-- #globalnav: Globale Unibe-Navigation -->
+    <div id="globalnav">
+        <a id="skip_globalnavigation" name="globalnavigation"></a> <!-- Skiplink-Anker: Globalnavigation -->
+        <ul id="udm">
+            <li><a href="http://www.unibe.ch/studium/">Studium</a><br />
+                <ul>
+              		<li><a href= "http://www.unibe.ch/organisation/fakultaeten.html" target="_top">- Fakult&auml;ten  Institute</a></li>
+              		<li><a href= "http://www.unibe.ch/studium/info.html" target="_top">- Studienwahl &amp; Einschreibung</a></li>
+              		<li><a href= "http://www.unibe.ch/studium/angebot.html" target="_top">- Vorlesungsverzeichnis &amp; E-Learning</a></li>
+              		<li><a href= "http://www.unibe.ch/studium/rundum.html" target="_top">- Rund ums Studium</a></li>
+              		<li><a href= "http://www.int.unibe.ch" target="_top">- Austausch &amp; Mobilit&auml;t</a></li>
+              		<li><a href= "http://www.unibe.ch/studium/weiterbildung.html" target="_top">- Universit&auml;re Weiterbildung</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/campus/">| Campus</a><br />
+                <ul>
+              		<li><a href="http://www.unibe.ch/campus/alltag.html" target="_top">- Uni Alltag</a></li>
+              		<li><a href="http://www.unibe.ch/campus/beratung.html" target="_top">- Beratung</a></li>
+              		<li><a href="http://subwww.unibe.ch/" target="_top">- SUB StudentInnenschaft</a></li>
+              		<li><a href="http://www.unibe.ch/campus/gruppen.html" target="_top">- Gruppen &amp; Vereine</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/bibliotheken/">| Bibliotheken</a><br />
+                <ul>
+          			<li><a href="http://www.unibe.ch/bibliotheken/online.html" target="_top">- Online-Recherche</a></li>
+          			<li><a href="http://www.biko.unibe.ch/bibliotheken.htm" target="_top">- Fachbibliotheken der Universit&auml;t</a></li>
+          			<li><a href="http://www.unibe.ch/bibliotheken/stub.html" target="_top">- Stadt- und Universit&auml;tsbibliothek</a></li>
+          			<li><a href="http://www.biko.unibe.ch" target="_top">- Bibliothekskoordination</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/forschung/">| Forschung</a><br />
+                <ul>
+              		<li><a href="http://www.unibe.ch/forschung/projekte.html" target="_top">- Forschungsprojekte</a></li>
+              		<li><a href="http://www.unibe.ch/forschung/netzwerk.html" target="_top">- Forschungs-Netzwerk</a></li>
+              		<li><a href="http://www.unibe.ch/forschung/foerderung.html" target="_top">- F&ouml;rderung &amp; Finanzierung</a></li>
+              		<li><a href="http://www.unibe.ch/forschung/transfer.html" target="_top">- Wissens-Transfer &amp; Patentierung</a></li>
+              		<li><a href="http://www.unibe.ch/forschung/wissenschaft.html" target="_top">- Wissenschaftsorganisationen</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/organisation/">| Organisation</a><br />
+                <ul>
+              		<li><a href="http://www.unibe.ch/organisation/organigramm.html" target="_top">- Organigramm</a></li>
+              		<li><a href="http://www.unibe.ch/organisation/leitung.html" target="_top">- Leitung</a></li>
+              		<li><a href="http://www.unibe.ch/organisation/dienste.html" target="_top">- Zentrale Dienste</a></li>
+              		<li><a href="http://www.unibe.ch/organisation/fakultaeten.html" target="_top">- Fakult&auml;ten &amp; Institute</a></li>
+              		<li><a href="http://www.unibe.ch/organisation/partner.html" target="_top">- Partner</a></li>
+              		<li><a href="http://www.unibe.ch/organisation/dokumente.html" target="_top">- Offizielle Dokumente</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/arbeiten/">| Arbeiten an der Uni</a><br />
+                <ul>
+              		<li><a href="http://www.unibe.ch/arbeiten/tools.html" target="_top">- Online Tools</a></li>
+              		<li><a href="http://www.unibe.ch/arbeiten/kommunikation.html" target="_top">- Kommunikation</a></li>
+              		<li><a href="http://www.unibe.ch/arbeiten/dozierende.html" target="_top">- Dozierende</a></li>
+              		<li><a href="http://www.unibe.ch/arbeiten/weiterbildung.html" target="_top">- Weiterbildung</a></li>
+              		<li><a href="http://www.pers.unibe.ch" target="_top">- Personal</a></li>
+              		<li><a href="http://www.jobs.unibe.ch" target="_top">- Stellenangebote</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.unibe.ch/oeffentlichkeit/">| &Ouml;ffentlichkeit</a><br />
+                <ul>
+              		<li><a href="http://www.unibe.ch/oeffentlichkeit/about.html" target="_top">- &Uuml;ber die Universit&auml;t</a></li>
+              		<li><a href="http://www.unibe.ch/oeffentlichkeit/gesellschaft.html" target="_top">- Universit&auml;t und Gesellschaft</a></li>
+              		<li><a href="http://www.unibe.ch/oeffentlichkeit/service.html" target="_top">- Dienstleistungen</a></li>
+              		<li><a href="http://www.unibe.ch/oeffentlichkeit/publikationen.html" target="_top">- Publikationen</a></li>
+              		<li><a href="http://www.unibe.ch/oeffentlichkeit/media.html" target="_top">- Medienservice</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- #metanavigation: meta navigation -->
+    <div id="metanav">
+        <a id="skip_metanavigation" name="metanavigation"></a> <!-- Skiplink-Anker: Metanavigation -->
+        <form action="http://www.search.unibe.ch/php/http/index.php?lang=de" method="get" name="unibesearch">
+            <input size="16" id="q" type="text" name="query words"/>
+            <input value="show_result" name="action" type="hidden"/>
+            <input value="#c_med_de" name="active_subcoll[]" type="hidden"/>
+            <input value="#c_med_de" name="displayed_subcoll[]" type="hidden"/>
+            <button type="submit">Suchen</button> |
+                <?php echo $this->metanavigation ?>
+        </form>
+    </div>
+
+    <!-- identity area -->
+    <div id="identity">
+        <div id="identityText">
+            <h1><?php echo $this->identityText ?></h1>
+        </div>
+        <div id="titelbild">&nbsp;</div>
+    </div>
+
+</div>
+<!-- #nav: - Ende -->
+
+<!-- #main: Beginn Inhaltsbereich -->
+<div id="main">
+
+<!-- #col1: Erste Float-Spalte des Inhaltsbereiches -->
+    <div id="col1">
+        <div id="col1_content" class="clearfix">
+            <div id="localnav">
+            <a id="skip_localnavigation" name="lokalnavigation"></a> <!-- Skiplink-Anker: Metanavigation -->
+            <?php echo $this->localnavigation ?>
+            </div>
+	</div>
+    </div>
+<!-- #col1: - Ende -->
+
+<!-- #col2: zweite Flaot-Spalte des Inhaltsbereiches -->
+    <div id="col2">
+        <div id="col2_content" class="clearfix">
+        <a id="skip_service" name="service"></a> <!-- Skiplink-Anker: Servicebereich -->
+	<?php echo $this->servicecontent ?>
+        </div>
+    </div>
+<!-- #col2: - Ende -->
+
+<!-- #col3: Statische Spalte des Inhaltsbereiches -->
+    <div id="col3">
+        <div id="col3_content" class="clearfix">
+        <a id="skip_content" name="content"></a> <!-- Skiplink-Anker: Inhalt -->
+            <div id="pagetitle"><h1><?php echo $this->pagetitle ?></h1></div>
+            <div id="content"><?php echo $this->maincontent ?></div>
+        </div>
+        <div id="adressfuss"><?php echo $this->adressfuss ?></div>
+    </div>
+
+    <!-- IE Column Clearing -->
+    <div id="ie_clearing">&nbsp;</div>
+    <!-- Ende: IE Column Clearing -->
+
+</div>
+<!-- #col3: - Ende -->
+
+<!-- #main: - Ende -->
+
+<!-- #Footer: Beginn Fu�zeile -->
+<div id="footer"><?php echo $this->footer ?>
+</div>
+<!-- #Footer: Ende -->
+
+<!-- #unilogo: Beginn Uni-Logo -->
+<div id="unilogo">
+    <a href="http://www.unibe.ch">
+        <img src="images/unibern_logo.gif" alt="Logo der Universit&auml;t Bern" border="0" />
+    </a>
+</div>
+<!-- #unilogo: Ende -->
+
+</div>
+</div>
+</body>
+</html>
